@@ -1,0 +1,9 @@
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.deps.json
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.pdb

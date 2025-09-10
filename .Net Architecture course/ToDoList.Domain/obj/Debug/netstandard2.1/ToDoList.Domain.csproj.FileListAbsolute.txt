@@ -1,0 +1,9 @@
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\bin\Debug\netstandard2.1\ToDoList.Domain.deps.json
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\bin\Debug\netstandard2.1\ToDoList.Domain.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\bin\Debug\netstandard2.1\ToDoList.Domain.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.AssemblyInfoInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.AssemblyInfo.cs
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.pdb
