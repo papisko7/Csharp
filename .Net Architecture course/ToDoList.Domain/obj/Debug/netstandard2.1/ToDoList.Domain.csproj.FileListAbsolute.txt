@@ -5,5 +5,6 @@ C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.AssemblyInfoInputs.cache
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.AssemblyInfo.cs
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.sourcelink.json
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.dll
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.pdb

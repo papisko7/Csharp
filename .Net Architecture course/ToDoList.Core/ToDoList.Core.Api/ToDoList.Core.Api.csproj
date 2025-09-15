@@ -8,4 +8,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\ToDoList.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
 </Project>

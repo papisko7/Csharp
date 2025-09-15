@@ -17,6 +17,7 @@ C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoLi
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.Api\obj\Debug\net5.0\ToDoList.Core.Api.csproj.CoreCompileInputs.cache
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.Api\obj\Debug\net5.0\ToDoList.Core.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.Api\obj\Debug\net5.0\ToDoList.Core.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.Api\obj\Debug\net5.0\ToDoList.Core.Api.sourcelink.json
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.Api\obj\Debug\net5.0\ToDoList.Core.Api.RazorTargetAssemblyInfo.cache
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.Api\obj\Debug\net5.0\scopedcss\bundle\ToDoList.Core.Api.styles.css
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.Api\obj\Debug\net5.0\staticwebassets\ToDoList.Core.Api.StaticWebAssets.Manifest.cache

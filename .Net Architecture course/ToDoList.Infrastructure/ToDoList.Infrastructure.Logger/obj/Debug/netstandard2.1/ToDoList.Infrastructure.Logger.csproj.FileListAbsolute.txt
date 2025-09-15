@@ -1,0 +1,10 @@
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.deps.json
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.AssemblyInfoInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.AssemblyInfo.cs
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.csproj.CoreCompileInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.sourcelink.json
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Logger.pdb

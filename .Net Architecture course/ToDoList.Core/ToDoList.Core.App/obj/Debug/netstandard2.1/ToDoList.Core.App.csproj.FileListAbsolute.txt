@@ -1,0 +1,10 @@
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Core.App.deps.json
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Core.App.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Core.App.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.AssemblyInfoInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.AssemblyInfo.cs
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.csproj.CoreCompileInputs.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.sourcelink.json
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.pdb
