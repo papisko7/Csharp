@@ -8,14 +8,30 @@
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
       "ToDoList.Core.App/1.0.0": {
+        "dependencies": {
+          "ToDoList.Domain": "1.0.0"
+        },
         "runtime": {
           "ToDoList.Core.App.dll": {}
+        }
+      },
+      "ToDoList.Domain/1.0.0": {
+        "runtime": {
+          "ToDoList.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "ToDoList.Core.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDoList.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -8,3 +8,11 @@ C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastruct
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\obj\Debug\netstandard2.1\ToDoList.Infrastructure.IoC.sourcelink.json
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\obj\Debug\netstandard2.1\ToDoList.Infrastructure.IoC.dll
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\obj\Debug\netstandard2.1\ToDoList.Infrastructure.IoC.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\bin\Debug\netstandard2.1\ToDoList.Core.App.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\bin\Debug\netstandard2.1\ToDoList.Domain.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.dll
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\bin\Debug\netstandard2.1\ToDoList.Core.App.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\bin\Debug\netstandard2.1\ToDoList.Domain.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.pdb
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\obj\Debug\netstandard2.1\ToDoList.Infrastructure.IoC.csproj.AssemblyReference.cache
+C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.IoC\obj\Debug\netstandard2.1\ToDoList.7FB420BF.Up2Date

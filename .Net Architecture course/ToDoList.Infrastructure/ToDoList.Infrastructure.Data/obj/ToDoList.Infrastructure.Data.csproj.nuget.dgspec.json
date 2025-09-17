@@ -140,6 +140,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.32, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.9, )"
             }
           },
           "imports": [

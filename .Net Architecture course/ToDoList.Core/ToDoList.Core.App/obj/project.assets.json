@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "ToDoList.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/ToDoList.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToDoList.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ToDoList.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../ToDoList.Domain/ToDoList.Domain.csproj",
+      "msbuildProject": "../../ToDoList.Domain/ToDoList.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "ToDoList.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kkowa\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Domain\\ToDoList.Domain.csproj": {
+              "projectPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Domain\\ToDoList.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
