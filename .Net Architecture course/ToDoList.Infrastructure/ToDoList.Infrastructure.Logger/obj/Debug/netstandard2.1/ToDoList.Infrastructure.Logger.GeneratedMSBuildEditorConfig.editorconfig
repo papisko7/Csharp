@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = ToDoList.Infrastructure.Logger
-build_property.ProjectDir = C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\
+build_property.ProjectDir = E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Logger\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

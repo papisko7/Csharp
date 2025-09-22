@@ -1,0 +1,41 @@
+﻿@page "/todos"
+@inject HttpClient Http
+@inject IConfiguration Configuration
+@using Microsoft.Extensions.Configuration
+@using ToDoList.Domain.ViewModels
+
+<h1>Todo List</h1>
+<p>This component demonstrates fetching data form the server</p>
+
+@if(todos == null)
+{
+    <p>Loading tasks...</p>
+} else{
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>IsCompleted</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var todo in todos.ToDos)
+            {
+                <tr>
+                    <td>Id</td>
+                    <td>Title</td>
+                    <td>IsCompleted</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    private ToDoViewModel todos;
+    protected override async Task OnInitializedAsync()
+    {
+        todos = await Http.GetFromJsonAsync<ToDoViewModel>($"{Configuration["ApiUrl"]}todo");
+    }
+}

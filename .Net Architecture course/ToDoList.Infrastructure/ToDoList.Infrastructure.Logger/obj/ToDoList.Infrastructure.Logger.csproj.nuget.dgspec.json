@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj": {}
+    "E:\\Repos\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj": {
+    "E:\\Repos\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj",
+        "projectUniqueName": "E:\\Repos\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj",
         "projectName": "ToDoList.Infrastructure.Logger",
-        "projectPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj",
-        "packagesPath": "C:\\Users\\kkowa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\obj\\",
+        "projectPath": "E:\\Repos\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\ToDoList.Infrastructure.Logger.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Repos\\.Net Architecture course\\ToDoList.Infrastructure\\ToDoList.Infrastructure.Logger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kkowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

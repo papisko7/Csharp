@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kkowa\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.App\\ToDoList.Core.App.csproj",
+      "projectUniqueName": "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.App\\ToDoList.Core.App.csproj",
       "projectName": "ToDoList.Core.App",
-      "projectPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.App\\ToDoList.Core.App.csproj",
-      "packagesPath": "C:\\Users\\kkowa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.App\\obj\\",
+      "projectPath": "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.App\\ToDoList.Core.App.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kkowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,8 +59,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Domain\\ToDoList.Domain.csproj": {
-              "projectPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Domain\\ToDoList.Domain.csproj"
+            "E:\\Repos\\.Net Architecture course\\ToDoList.Domain\\ToDoList.Domain.csproj": {
+              "projectPath": "E:\\Repos\\.Net Architecture course\\ToDoList.Domain\\ToDoList.Domain.csproj"
             }
           }
         }

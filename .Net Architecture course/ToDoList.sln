@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Core.Test", "ToDoL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Core.App", "ToDoList.Core\ToDoList.Core.App\ToDoList.Core.App.csproj", "{6E0F0884-2151-4EB7-96F7-6C54E7A47388}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDoList.Presentation", "ToDoList.Presentation", "{3FB70A1B-7D63-40FD-AD7E-4B11889E6A34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Presentation.UI", "ToDoList.Presentation\ToDoList.Presentation.UI\ToDoList.Presentation.UI.csproj", "{5AD48BDB-DDAD-46E1-B239-8F5253F41888}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,10 @@ Global
 		{6E0F0884-2151-4EB7-96F7-6C54E7A47388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E0F0884-2151-4EB7-96F7-6C54E7A47388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E0F0884-2151-4EB7-96F7-6C54E7A47388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD48BDB-DDAD-46E1-B239-8F5253F41888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD48BDB-DDAD-46E1-B239-8F5253F41888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD48BDB-DDAD-46E1-B239-8F5253F41888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD48BDB-DDAD-46E1-B239-8F5253F41888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +77,7 @@ Global
 		{7CD4AC51-3B9C-4FE0-8AE8-5D6CB04F3607} = {AF08829F-2C20-484A-BF72-0DBAF587393D}
 		{B5598F5D-9B46-4347-8C46-08B363AA6DE2} = {AF08829F-2C20-484A-BF72-0DBAF587393D}
 		{6E0F0884-2151-4EB7-96F7-6C54E7A47388} = {AF08829F-2C20-484A-BF72-0DBAF587393D}
+		{5AD48BDB-DDAD-46E1-B239-8F5253F41888} = {3FB70A1B-7D63-40FD-AD7E-4B11889E6A34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {043B49F6-57B3-4506-B03F-CF1E55DAA292}

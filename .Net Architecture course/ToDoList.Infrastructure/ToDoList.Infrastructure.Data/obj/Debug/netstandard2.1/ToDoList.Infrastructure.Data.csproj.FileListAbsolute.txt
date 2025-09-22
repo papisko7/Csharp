@@ -12,3 +12,17 @@ C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastruct
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.2116B730.Up2Date
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.dll
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.pdb
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.deps.json
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.dll
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Infrastructure.Data.pdb
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Domain.dll
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\bin\Debug\netstandard2.1\ToDoList.Domain.pdb
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.csproj.AssemblyReference.cache
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.AssemblyInfoInputs.cache
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.AssemblyInfo.cs
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.csproj.CoreCompileInputs.cache
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.sourcelink.json
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.2116B730.Up2Date
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.dll
+E:\Repos\.Net Architecture course\ToDoList.Infrastructure\ToDoList.Infrastructure.Data\obj\Debug\netstandard2.1\ToDoList.Infrastructure.Data.pdb

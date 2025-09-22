@@ -23,6 +23,7 @@ namespace ToDoList.Core.Api
         public void ConfigureServices(IServiceCollection services)
         {
             RegisterServices(services);
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -31,6 +32,16 @@ namespace ToDoList.Core.Api
             services.AddDbContext<ToDoContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("DevCorsPolicy",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                               .AllowAnyMethod()
+                               .AllowAnyHeader();
+                    });
             });
         }
 
@@ -50,15 +61,13 @@ namespace ToDoList.Core.Api
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            app.UseCors("DevCorsPolicy");
         }
     }
 }

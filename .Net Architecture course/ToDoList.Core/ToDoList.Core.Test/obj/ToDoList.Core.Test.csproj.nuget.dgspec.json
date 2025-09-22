@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj": {}
+    "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj": {
+    "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj",
+        "projectUniqueName": "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj",
         "projectName": "ToDoList.Core.Test",
-        "projectPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj",
-        "packagesPath": "C:\\Users\\kkowa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kkowa\\source\\repos\\Csharp\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\obj\\",
+        "projectPath": "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\ToDoList.Core.Test.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Repos\\.Net Architecture course\\ToDoList.Core\\ToDoList.Core.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kkowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

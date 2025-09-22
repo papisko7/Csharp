@@ -12,3 +12,17 @@ C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoLi
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Domain.dll
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Domain.pdb
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.B8E8E3CE.Up2Date
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Core.App.deps.json
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Core.App.dll
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Core.App.pdb
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Domain.dll
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\bin\Debug\netstandard2.1\ToDoList.Domain.pdb
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.csproj.AssemblyReference.cache
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.AssemblyInfoInputs.cache
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.AssemblyInfo.cs
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.csproj.CoreCompileInputs.cache
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.sourcelink.json
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.B8E8E3CE.Up2Date
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.dll
+E:\Repos\.Net Architecture course\ToDoList.Core\ToDoList.Core.App\obj\Debug\netstandard2.1\ToDoList.Core.App.pdb

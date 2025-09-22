@@ -8,3 +8,13 @@ C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.sourcelink.json
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.dll
 C:\Users\kkowa\source\repos\Csharp\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.pdb
+E:\Repos\.Net Architecture course\ToDoList.Domain\bin\Debug\netstandard2.1\ToDoList.Domain.deps.json
+E:\Repos\.Net Architecture course\ToDoList.Domain\bin\Debug\netstandard2.1\ToDoList.Domain.dll
+E:\Repos\.Net Architecture course\ToDoList.Domain\bin\Debug\netstandard2.1\ToDoList.Domain.pdb
+E:\Repos\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.AssemblyInfoInputs.cache
+E:\Repos\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.AssemblyInfo.cs
+E:\Repos\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.csproj.CoreCompileInputs.cache
+E:\Repos\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.sourcelink.json
+E:\Repos\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.dll
+E:\Repos\.Net Architecture course\ToDoList.Domain\obj\Debug\netstandard2.1\ToDoList.Domain.pdb
