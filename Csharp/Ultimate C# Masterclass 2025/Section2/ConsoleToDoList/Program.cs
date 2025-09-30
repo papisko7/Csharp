@@ -1,10 +1,10 @@
 ﻿string userChoice = string.Empty;
-int todoCounter = 1;
 List<string> todoList = new List<string>();
+string description = string.Empty; 
 
 do
 {
-	Console.WriteLine("[S]ee all TODOs");
+	Console.WriteLine("\n[S]ee all TODOs"); 
 	Console.WriteLine("[A]dd a TODO");
 	Console.WriteLine("[R]emove a TODO");
 	Console.WriteLine("[E]xit");
@@ -15,17 +15,12 @@ do
 	{
 		case "A":
 			bool isValid = false;
-			string description = string.Empty;
-
-			if (todoList == null)
-			{
-				todoList = new List<string>();
-			}
 
 			while (!isValid)
 			{
-				Console.WriteLine("Enter a TODO description: ");
-				description = Console.ReadLine() ?? string.Empty;
+				Console.Write("Enter a TODO description: "); 
+															 
+				description = Console.ReadLine()?.Trim() ?? string.Empty;
 
 				if (string.IsNullOrEmpty(description))
 				{
@@ -41,56 +36,57 @@ do
 				isValid = true;
 			}
 			todoList.Add(description);
-			Console.WriteLine($"TODO successfuly added: {description}");
+			Console.WriteLine($"TODO successfully added: {description}");
 			break;
 
 		case "R":
-			if (todoList == null || todoList.Count == 0)
+			if (todoList.Count == 0)
 			{
-				todoList = new List<string>();
 				Console.WriteLine("There are no TODOs to remove.");
 				break;
 			}
 
-			else
+			int indexToRemove = -1; 
+			bool isValidRemove = false;
+
+			while (!isValidRemove)
 			{
-				bool isValidRemove = false;
-				int index = 0;
+				Console.Write("Select the index of the TODO you want to remove: ");
+				string indexInput = Console.ReadLine();
 
-				while (!isValidRemove)
+				if (int.TryParse(indexInput, out indexToRemove))
 				{
-					Console.WriteLine("Select the index of the TODO you want to remove:");
-					index = int.Parse(Console.ReadLine() ?? "0");
-
-					if (string.IsNullOrWhiteSpace(index.ToString()))
+					if (indexToRemove >= 1 && indexToRemove <= todoList.Count)
 					{
-						Console.WriteLine("Selected index cannot be empty. No TODO is removed.");
-						continue;
+						isValidRemove = true; 
 					}
-
-					if (index < 1 || index > todoList.Count)
+					else
 					{
-						Console.WriteLine("The given index is not valid. No TODO is removed.");
-						continue;
+						Console.WriteLine($"The given index is not valid. Please enter a number between 1 and {todoList.Count}.");
 					}
 				}
-				todoList.RemoveAt(index);	
+				else
+				{
+					Console.WriteLine("Invalid input. Please enter a valid number.");
+				}
 			}
+
+			string removedDescription = todoList[indexToRemove - 1];
+			todoList.RemoveAt(indexToRemove - 1);
+			Console.WriteLine($"TODO removed: {removedDescription}");
 			break;
 
 		case "S":
-			if (todoList == null || todoList.Count == 0)
+			if (todoList.Count == 0)
 			{
-				todoList = new List<string>();
 				Console.WriteLine("No TODOs found.");
 			}
-
 			else
 			{
 				Console.WriteLine("Here are your TODOs:");
-				foreach (string todo in todoList)
+				for (int i = 0; i < todoList.Count; i++)
 				{
-					Console.WriteLine($"{todoCounter++}. {todo}");
+					Console.WriteLine($"{i + 1}. {todoList[i]}");
 				}
 			}
 			break;
@@ -103,8 +99,10 @@ do
 			Console.WriteLine("Incorrect option, please try again.");
 			break;
 	}
-	if(userChoice != "E")
+
+	if (userChoice != "E")
 	{
-		Console.WriteLine("What do you want to do?");
+		Console.WriteLine("\nPress Enter to continue...");
+		Console.ReadLine();
 	}
 } while (userChoice != "E");
