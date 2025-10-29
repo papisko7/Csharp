@@ -2,17 +2,23 @@
 {
 	public class Ingredient
 	{
-		private int ID { get; set; }
+		private int _id;
 
-		private string Name { get; set; }
+		private string _name;
 
-		private string Instructions { get; set; }
+		private string _instructions;
 
 		public Ingredient(int id, string name, string instructions)
 		{
-			ID = id;
-			Name = name;
-			Instructions = instructions;
+			_id = id;
+			_name = name;
+			_instructions = instructions;
 		}
+
+		public string GetName() => _name;
+
+		public string GetInstructions() => _instructions;
+
+		public string ToString() => $"{_id}. {_name}";
 	}
 }
