@@ -1,17 +1,27 @@
 ﻿using CookieCookBook;
 
-List<Recipe> recipes = new List<Recipe>();
-
-if (recipes.Count > 0)
+namespace CookieCookBook.Appplication
 {
-    // end goal reading and displaing stuff from the text file onto the console
+	public class App
+	{
+		private static readonly Ingredient[] LIST_OF_AVAILABLE_INGREDIENTS =
+		{
+		new Ingredient(1, "Wheat flour", "Sieve. Add to other ingredients."),
+		new Ingredient(2, "Egg", "Crack and beat."),
+		new Ingredient(3, "Sugar", "Measure and mix in."),
+		new Ingredient(2, "Coconut flour", "Sieve. Add to other ingredients."),
+		new Ingredient(3, "Butter", "Melt on low heat. Add to other ingredients."),
+		new Ingredient(4, "Chocolate", "Melt in a water bath. Add to other ingredients."),
+		new Ingredient(5, "Sugar", "Add to other ingredients."),
+		new Ingredient(6, "Cardamom", "Take half a teaspoon. Add to other ingredients."),
+		new Ingredient(7, "Cinnamon", "Take half a teaspoon. Add to other ingredients."),
+		new Ingredient(8, "Cocoa powder", "Add to other ingredients")
+		};
 
-    Console.WriteLine("Printing existing recipes.");
+		private List<Ingredient> _recipe;
 
-    foreach (var recipe in recipes)
-    {
-        recipe.DisplayIngredients();
-    }
+		public static void main(String[] args)
+		{	
+		}
+	}
 }
-
-Console.WriteLine("Create a new cookie recipe! Available ingredients are:");
