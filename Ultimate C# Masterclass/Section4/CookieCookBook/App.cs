@@ -1,10 +1,11 @@
-﻿using CookieCookBook;
-
-namespace CookieCookBook.Appplication
+﻿namespace CookieCookBook.Appplication
 {
 	public class App
 	{
-		private static readonly Ingredient[] LIST_OF_AVAILABLE_INGREDIENTS =
+		const string FILE_PATH = "recipes.txt";
+		const FileFormat FILE_FORMAT = FileFormat.TXT;
+
+		private static readonly Ingredient[] _listOfIngredients =
 		{
 		new Ingredient(1, "Wheat flour", "Sieve. Add to other ingredients."),
 		new Ingredient(2, "Egg", "Crack and beat."),
@@ -15,13 +16,20 @@ namespace CookieCookBook.Appplication
 		new Ingredient(5, "Sugar", "Add to other ingredients."),
 		new Ingredient(6, "Cardamom", "Take half a teaspoon. Add to other ingredients."),
 		new Ingredient(7, "Cinnamon", "Take half a teaspoon. Add to other ingredients."),
-		new Ingredient(8, "Cocoa powder", "Add to other ingredients")
+		new Ingredient(8, "Cocoa powder", "Add to other ingredients.")
 		};
 
-		private List<Ingredient> _recipe;
-
 		public static void main(String[] args)
-		{	
+		{
+			FileManager.CreateFile(FILE_PATH);
+			FileManager.ReadFile(FILE_PATH);
+
+			Console.WriteLine("Create a new cookie recipe! Available ingredients are:");
+
+			foreach (var ingredient in _listOfIngredients)
+			{
+				Console.WriteLine(ingredient);
+			}
 		}
 	}
 }

@@ -1,16 +1,20 @@
-﻿namespace CookieCookBook
+﻿using System.Diagnostics.Metrics;
+
+namespace CookieCookBook
 {
-	public static class FileManager
+	public class FileManager
 	{
-		public static void CreateFile(string filePath)
+		private static int _recipeNumber = 0;
+
+		public static void CreateFile(string filePath, FileFormat fileFormat = FileFormat.TXT)
 		{
-			if (File.Exists(filePath))
+			if (!File.Exists(filePath))
 			{
-				Console.WriteLine("The file has already been created. New file won't be made.");
-				return;
+				File.Create(filePath);
+				Console.WriteLine($"File created successfully at: {filePath}");
 			}
 
-			File.Create(filePath);
+			Console.WriteLine("The file has already been created. New file won't be made.");
 		}
 
 		public static void ReadFile(string filePath)
@@ -21,8 +25,23 @@
 				return;
 			}
 
-			File.OpenRead(filePath);
-			File.ReadAllText(filePath);
+			string content = File.ReadAllText(filePath);
+
+			Console.WriteLine($"Successfuly read file at {filePath}.");
+			Console.WriteLine("Existing recipes are:");
+			Console.WriteLine(content);
+		}
+
+		public static void WriteToFile(Recipe recipe, string filePath)
+		{
+			if (!File.Exists(filePath))
+			{
+				Console.WriteLine($"The file that you want to fill with content does not exist at: {filePath}");
+				return;
+			}
+
+			File.AppendText($"***** {_recipeNumber} *****");
+			File.AppendText(recipe.FormattedIngredientList());
 		}
 	}
 }

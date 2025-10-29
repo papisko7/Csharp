@@ -1,7 +1,7 @@
 ﻿namespace CookieCookBook
 {
-	public static class Recipes
+	public class Recipes
 	{
-		private static List<Recipe> RecipesList { get; set; }
+		private List<Recipe> _recipesList;
 	}
 }
