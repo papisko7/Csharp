@@ -19,6 +19,6 @@
 
 		public string GetInstructions() => _instructions;
 
-		public string ToString() => $"{_id}. {_name}";
+		public override string ToString() => $"{_id}. {_name}";
 	}
 }
