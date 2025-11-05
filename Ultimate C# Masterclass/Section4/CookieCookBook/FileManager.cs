@@ -28,7 +28,6 @@ namespace CookieCookBook
 			string content = File.ReadAllText(filePath);
 
 			Console.WriteLine($"Successfuly read file at {filePath}.");
-			Console.WriteLine("Existing recipes are:");
 			Console.WriteLine(content);
 		}
 
