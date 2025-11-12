@@ -30,6 +30,34 @@
 			{
 				Console.WriteLine(ingredient);
 			}
+
+			string selectedIngredient = string.Empty;
+			int ingredientId = 0;
+
+            Console.WriteLine("Selecting ingredients for a new recipe.");
+			do
+			{
+				Console.WriteLine("Add an ingredient by its ID or type anything else if finished.");
+				selectedIngredient = Console.ReadLine();
+
+				ingredientId = int.Parse(selectedIngredient);
+
+				switch (ingredientId)
+				{
+					case 1:
+					case 2:
+					case 3:
+					case 4:
+					case 5:
+					case 6:
+					case 7:
+					case 8:
+						
+						break;
+                }
+
+            } while (ingredientId > 0 && ingredientId <= 8);
+			
 		}
 	}
 }
