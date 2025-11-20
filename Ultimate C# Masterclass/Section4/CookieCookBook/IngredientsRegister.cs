@@ -1,21 +1,22 @@
-﻿namespace CookieCookBook
+﻿using CookieCookBook.Recipes.Ingredients;
+using CookieCookBook.Recipes.Ingredients.Interfaces;
+
+namespace CookieCookBook
 {
 	public class IngredientsRegister
 	{
-		public IEnumerable<string> GetAllIngredients()
+		public IEnumerable<Ingredient> GetAllIngredients()
 		{
-			return new List<string>
+			return new List<Ingredient>
 			{
-				"Flour",
-				"Sugar",
-				"Butter",
-				"Eggs",
-				"Baking Powder",
-				"Vanilla Extract",
-				"Chocolate Chips",
-				"Oats",
-				"Cinnamon",
-				"Nuts"
+				new WheatFlour(),
+				new CoconutFlour(),
+				new Butter(),
+				new Chocolate(),
+				new Sugar(),
+				new Cardamom(),
+				new Cinnamon(),
+				new CocoaPowder()
 			};
 		}
 	}
