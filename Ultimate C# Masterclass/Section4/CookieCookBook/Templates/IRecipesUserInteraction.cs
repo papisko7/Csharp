@@ -8,7 +8,8 @@ namespace CookieCookBook.Templates
 
 		public void Exit();
 
-        public void PrintExistingRecipes(IEnumerable<Recipe> allRecipes);
-        public void PromptToCreateRecipe();
-    }
+		public void PrintExistingRecipes(IEnumerable<Recipe> allRecipes);
+
+		public void PromptToCreateRecipe();
+	}
 }

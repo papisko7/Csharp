@@ -39,18 +39,18 @@ namespace CookieCookBook.Logic
 			}
 		}
 
-        public void PromptToCreateRecipe()
-        {
+		public void PromptToCreateRecipe()
+		{
 			Console.WriteLine("Create a new cookie recipe!");
 			Console.WriteLine("Available ingredients are:");
 
-			foreach (var ingredient in _ingredientsRegister)
+			foreach (var ingredient in _ingredientsRegister.GetAllIngredients())
 			{
 				Console.WriteLine(ingredient);
 			}
-        }
+		}
 
-        public void ShowMessage(string message)
+		public void ShowMessage(string message)
 		{
 			Console.WriteLine(message);
 		}

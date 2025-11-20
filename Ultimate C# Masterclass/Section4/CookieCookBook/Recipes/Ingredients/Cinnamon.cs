@@ -4,7 +4,7 @@ namespace CookieCookBook.Recipes.Ingredients
 {
 	public class Cinnamon : Ingredient
 	{
-		public override int ID => 7;
+		public override int Id => 7;
 
 		public override string Name => "Cinnamon";
 
