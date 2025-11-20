@@ -1,4 +1,5 @@
 ﻿using CookieCookBook.Recipes;
+using CookieCookBook.Recipes.Ingredients.Interfaces;
 
 namespace CookieCookBook.Templates
 {
@@ -11,5 +12,7 @@ namespace CookieCookBook.Templates
 		public void PrintExistingRecipes(IEnumerable<Recipe> allRecipes);
 
 		public void PromptToCreateRecipe();
-	}
+
+        IEnumerable<Ingredient> ReadIngredientsFromUser();
+    }
 }
