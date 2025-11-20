@@ -19,5 +19,18 @@ namespace CookieCookBook
 				new CocoaPowder()
 			};
 		}
+
+		public Ingredient GetIngredientById(int ingredientId)
+		{
+			foreach (var ingredient in GetAllIngredients())
+			{
+				if (ingredient.Id == ingredientId)
+				{
+					return ingredient;
+				}
+			}
+
+			return null;
+		}
 	}
 }

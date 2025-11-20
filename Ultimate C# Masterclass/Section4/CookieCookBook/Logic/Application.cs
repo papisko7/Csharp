@@ -1,4 +1,5 @@
-﻿using CookieCookBook.Templates;
+﻿using CookieCookBook.Recipes;
+using CookieCookBook.Templates;
 
 namespace CookieCookBook.Logic
 {
@@ -17,26 +18,27 @@ namespace CookieCookBook.Logic
 		public void Run(string filePath)
 		{
 			var allRecipes = _recipesRepository.ReadRecipes(filePath);
-			// var ingredients = _recipesConsoleUserInteraction.ReadIngredientsFromUser();
-
+			
 			_recipesConsoleUserInteraction.PrintExistingRecipes(allRecipes);
 			_recipesConsoleUserInteraction.PromptToCreateRecipe();
 
-			//if (ingredients.Count > 0)
-			//{
-			//	var recipe = new Recipe(ingredients);
-			//	allRecipes.Add(recipe);
-			//	_recipesRepository.WriteRecipes(filePath, allRecipes);
+			var ingredients = _recipesConsoleUserInteraction.ReadIngredientsFromUser();
 
-			//	_recipesConsoleUserInteraction.ShowMessage("Recipe added");
-			//	_recipesConsoleUserInteraction.ShowMessage(recipe.ToString());
-			//}
+			if (ingredients.Count() > 0)
+			{
+				var recipe = new Recipe(ingredients);
+				allRecipes.Add(recipe);
+				// _recipesRepository.WriteRecipes(filePath, allRecipes);
 
-			//else
-			//{
-			//	_recipesConsoleUserInteraction.ShowMessage("No ingredients have been selected. " +
-			//		"Recipe will not be saved.");
-			//}
+				_recipesConsoleUserInteraction.ShowMessage("Recipe added");
+				_recipesConsoleUserInteraction.ShowMessage(recipe.ToString());
+			}
+
+			else
+			{
+				_recipesConsoleUserInteraction.ShowMessage("No ingredients have been selected. " +
+					"Recipe will not be saved.");
+			}
 
 			//_recipesConsoleUserInteraction.Exit();
 		}
