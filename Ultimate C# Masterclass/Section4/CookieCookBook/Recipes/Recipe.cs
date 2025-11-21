@@ -5,7 +5,7 @@ namespace CookieCookBook.Recipes
 {
 	public class Recipe
 	{
-		private IEnumerable<Ingredient> Ingredients { get; }
+		public IEnumerable<Ingredient> Ingredients { get; }
 
 		public Recipe(IEnumerable<Ingredient> ingredients)
 		{

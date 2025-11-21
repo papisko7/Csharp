@@ -1,4 +1,6 @@
-﻿using CookieCookBook.Logic;
+﻿using CookieCookBook.FileManagement;
+using CookieCookBook.Logic;
+using CookieCookBook.Logic.Repositories;
 
 namespace CookieCookBook
 {
@@ -7,7 +9,7 @@ namespace CookieCookBook
 		public static void Main(string[] args)
 		{
 			const string filePath = "recipes.json";
-			var app = new Application(new RecipesRepository(), new RecipesConsoleUserInteraction(new IngredientsRegister()));
+			var app = new Application(new RecipesRepository(new StringsTextualRepository()), new RecipesConsoleUserInteraction(new IngredientsRegister()));
 
 			app.Run(filePath);
 		}
