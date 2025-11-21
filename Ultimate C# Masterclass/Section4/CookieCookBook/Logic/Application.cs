@@ -28,7 +28,7 @@ namespace CookieCookBook.Logic
 			{
 				var recipe = new Recipe(ingredients);
 				allRecipes.Add(recipe);
-				// _recipesRepository.WriteRecipes(filePath, allRecipes);
+				_recipesRepository.WriteRecipes(filePath, allRecipes);
 
 				_recipesConsoleUserInteraction.ShowMessage("Recipe added");
 				_recipesConsoleUserInteraction.ShowMessage(recipe.ToString());
