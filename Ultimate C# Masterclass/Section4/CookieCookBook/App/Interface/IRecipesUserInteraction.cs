@@ -1,7 +1,7 @@
 ﻿using CookieCookBook.Recipes;
 using CookieCookBook.Recipes.Ingredients.Interfaces;
 
-namespace CookieCookBook.Templates
+namespace CookieCookBook.App.Interface
 {
 	public interface IRecipesUserInteraction
 	{
@@ -13,6 +13,6 @@ namespace CookieCookBook.Templates
 
 		public void PromptToCreateRecipe();
 
-        IEnumerable<Ingredient> ReadIngredientsFromUser();
-    }
+		IEnumerable<Ingredient> ReadIngredientsFromUser();
+	}
 }
