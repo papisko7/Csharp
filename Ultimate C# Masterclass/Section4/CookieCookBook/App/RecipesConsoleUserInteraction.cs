@@ -1,8 +1,9 @@
-﻿using CookieCookBook.Recipes;
+﻿using CookieCookBook.App.Interface;
+using CookieCookBook.Recipes;
+using CookieCookBook.Recipes.Ingredients;
 using CookieCookBook.Recipes.Ingredients.Interfaces;
-using CookieCookBook.Templates;
 
-namespace CookieCookBook.Logic
+namespace CookieCookBook.App
 {
 	public class RecipesConsoleUserInteraction : IRecipesUserInteraction
 	{

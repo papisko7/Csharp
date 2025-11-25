@@ -1,15 +1,15 @@
-﻿using CookieCookBook.Recipes;
-using CookieCookBook.Templates;
+﻿using CookieCookBook.App.Interface;
+using CookieCookBook.Recipes;
+using CookieCookBook.Recipes.Interface;
 
-namespace CookieCookBook.Logic
+namespace CookieCookBook.App
 {
-	public class Application
+	public class CookiesRecipesApp
 	{
 		private readonly IRecipesRepository _recipesRepository;
 		private readonly IRecipesUserInteraction _recipesConsoleUserInteraction;
 
-
-		public Application(IRecipesRepository recipesRepository, IRecipesUserInteraction recipesUserInteraction)
+		public CookiesRecipesApp(IRecipesRepository recipesRepository, IRecipesUserInteraction recipesUserInteraction)
 		{
 			_recipesRepository = recipesRepository;
 			_recipesConsoleUserInteraction = recipesUserInteraction;
@@ -18,7 +18,7 @@ namespace CookieCookBook.Logic
 		public void Run(string filePath)
 		{
 			var allRecipes = _recipesRepository.ReadRecipes(filePath);
-			
+
 			_recipesConsoleUserInteraction.PrintExistingRecipes(allRecipes);
 			_recipesConsoleUserInteraction.PromptToCreateRecipe();
 
@@ -40,7 +40,7 @@ namespace CookieCookBook.Logic
 					"Recipe will not be saved.");
 			}
 
-			//_recipesConsoleUserInteraction.Exit();
+			_recipesConsoleUserInteraction.Exit();
 		}
 	}
 }

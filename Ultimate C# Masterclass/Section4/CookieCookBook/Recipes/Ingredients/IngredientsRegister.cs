@@ -1,9 +1,9 @@
-﻿using CookieCookBook.Recipes.Ingredients;
+﻿using CookieCookBook.Recipes.Ingredients.Interface;
 using CookieCookBook.Recipes.Ingredients.Interfaces;
 
-namespace CookieCookBook
+namespace CookieCookBook.Recipes.Ingredients
 {
-	public class IngredientsRegister
+	public class IngredientsRegister : IIngredientsRegister
 	{
 		public IEnumerable<Ingredient> GetAllIngredients()
 		{
