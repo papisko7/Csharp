@@ -1,9 +1,32 @@
 ﻿using System.Text.Json;
 
-Console.WriteLine("Enter the file name you want to read: ");
-var fileName = Console.ReadLine();
+string fileContents = default;
+bool isValidInput = false;
 
-var fileContents = File.ReadAllText(fileName);
+do
+{
+	try
+	{
+		Console.WriteLine("Enter the file path you want to read (or file name if the file is in the project file): ");
+		var filePath = Console.ReadLine();
+
+		fileContents = File.ReadAllText(filePath);
+		isValidInput = true;
+	}
+	catch (ArgumentNullException)
+	{
+		Console.WriteLine("File name is null.");
+	}
+	catch (ArgumentException)
+	{
+		Console.WriteLine("File name is empty.");
+	}
+	catch (FileNotFoundException)
+	{
+		Console.WriteLine("File of a given name does not exist");
+	}
+} while (!isValidInput);
+
 var videoGames = JsonSerializer.Deserialize<List<VideoGame>>(fileContents);
 
 if (videoGames.Count > 0)
