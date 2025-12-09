@@ -13,26 +13,26 @@ namespace GameDataParserNamespace
 
 			do
 			{
-				try
-				{
-					Console.WriteLine("Enter the file path you want to read (or file name if the file is in the project file): ");
-					filePath = Console.ReadLine();
+				Console.WriteLine("Enter the file path you want to read (or file name if the file is in the project file): ");
+				filePath = Console.ReadLine();
 
-					fileContents = File.ReadAllText(filePath);
-					isValidInput = true;
-				}
-				catch (ArgumentNullException)
+				if (filePath is null)
 				{
-					Console.WriteLine("File name is null.");
+					Console.WriteLine("File path cannot be null!");
 				}
-				catch (ArgumentException)
+
+				else if (filePath.Equals(string.Empty))
 				{
-					Console.WriteLine("File name is empty.");
+					Console.WriteLine("File path cannot be empty!");
 				}
-				catch (FileNotFoundException)
+
+				else if (!File.Exists(filePath))
 				{
-					Console.WriteLine("File of a given name does not exist");
+					Console.WriteLine("File of a given path does not exist!");
 				}
+
+				fileContents = File.ReadAllText(filePath);
+				isValidInput = true;
 			} while (!isValidInput);
 
 			try
