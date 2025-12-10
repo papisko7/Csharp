@@ -1,4 +1,4 @@
-﻿namespace LoggerNamespace
+﻿namespace GameDataParser.Logging
 {
 	public class Logger
 	{
