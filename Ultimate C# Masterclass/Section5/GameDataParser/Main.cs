@@ -1,7 +1,10 @@
-﻿using GameDataParserNamespace;
-using LoggerNamespace;
+﻿using GameDataParser.App;
+using GameDataParser.DataAccess;
+using GameDataParser.Logging;
+using GameDataParser.UserInteraction;
 
-GameDataParser app = new GameDataParser();
+ConsoleUserInteractor userInteractor = new ConsoleUserInteractor();
+GameDataParserApp app = new GameDataParserApp(userInteractor, new LocalFileReader(), new VideoGamesDeserializer(userInteractor), new GamesPrinter(userInteractor));
 Logger logger = new Logger("log.txt");
 
 try
