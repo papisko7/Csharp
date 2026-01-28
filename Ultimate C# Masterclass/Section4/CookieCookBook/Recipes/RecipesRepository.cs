@@ -20,49 +20,25 @@ namespace CookieCookBook.Recipes
 
 		public List<Recipe> ReadRecipes(string filePath)
 		{
-			var recipesFromFile = _stringsRepository.Read(filePath);
-			var recipes = new List<Recipe>();
-
-			foreach (var recipeFromFile in recipesFromFile)
-			{
-				var recipe = RecipeFromString(recipeFromFile);
-				recipes.Add(recipe);
-			}
-
-			return recipes;
+			return _stringsRepository.Read(filePath)
+				.Select(RecipeFromString).ToList();
 		}
 
 		private Recipe RecipeFromString(string recipeFromFile)
 		{
-			var textualIds = recipeFromFile.Split(SEPARATOR);
-			var ingredients = new List<Ingredient>();
-
-			foreach (var textualId in textualIds)
-			{
-				var id = int.Parse(textualId);
-				var ingredient = _ingredientsRegister.GetIngredientById(id);
-
-				ingredients.Add(ingredient);
-			}
+			var ingredients = recipeFromFile.Split(SEPARATOR)
+				.Select(int.Parse)
+				.Select(_ingredientsRegister.GetIngredientById)
+				.ToList();
 
 			return new Recipe(ingredients);
 		}
 
 		public void WriteRecipes(string filePath, List<Recipe> allRecipes)
 		{
-			var recipesAsStrings = new List<string>();
-
-			foreach (var recipe in allRecipes)
-			{
-				var allIds = new List<int>();
-
-				foreach (var ingredient in recipe.Ingredients)
-				{
-					allIds.Add(ingredient.Id);
-				}
-
-				recipesAsStrings.Add(string.Join(SEPARATOR, allIds));
-			}
+			var recipesAsStrings = allRecipes.Select(recipe => string.Join(SEPARATOR, recipe.Ingredients
+				.Select(r => r.Id)))
+				.ToList();
 
 			_stringsRepository.Write(filePath, recipesAsStrings);
 		}
