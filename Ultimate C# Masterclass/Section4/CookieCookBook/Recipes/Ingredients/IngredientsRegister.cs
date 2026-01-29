@@ -23,8 +23,15 @@ namespace CookieCookBook.Recipes.Ingredients
 
 		public Ingredient GetIngredientById(int ingredientId)
 		{
-			return GetAllIngredients()
-				.FirstOrDefault(ingredient => ingredient.Id == ingredientId);
+			var allIngredients = GetAllIngredients();
+			var allIngredientsWithGivenId = allIngredients.Where(ingredient => ingredient.Id == ingredientId);
+
+			if (allIngredientsWithGivenId.Count() > 1)
+			{
+				throw new InvalidOperationException($"More than one ingredient have Id equal to {ingredientId}.");
+			}
+
+			return allIngredientsWithGivenId.FirstOrDefault();
 		}
 	}
 }
