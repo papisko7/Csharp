@@ -1,4 +1,4 @@
-﻿namespace CookieCookBook.FileAccess
+﻿namespace CookieCookBook.FileAccess.Enum
 {
 	public enum FileFormat
 	{

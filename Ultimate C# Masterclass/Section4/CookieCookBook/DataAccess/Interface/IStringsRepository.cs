@@ -2,8 +2,8 @@
 {
 	public interface IStringsRepository
 	{
-		List<string> Read(string filePath);
+		public List<string> Read(string filePath);
 
-		void Write(string filePath, List<string> allLines);
+		public void Write(string filePath, List<string> allLines);
 	}
 }

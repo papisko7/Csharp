@@ -1,4 +1,6 @@
-﻿namespace CookieCookBook.FileAccess
+﻿using CookieCookBook.FileAccess.Enum;
+
+namespace CookieCookBook.FileAccess
 {
 	public static class FileFormatExtensions
 	{

@@ -4,6 +4,6 @@
 	{
 		public List<Recipe> ReadRecipes(string filePath);
 
-		void WriteRecipes(string filePath, List<Recipe> allRecipes);
+		public void WriteRecipes(string filePath, List<Recipe> allRecipes);
 	}
 }

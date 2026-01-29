@@ -1,6 +1,6 @@
 ﻿using CookieCookBook.Recipes.Ingredients.Interfaces;
 
-namespace CookieCookBook.Recipes.Ingredients
+namespace CookieCookBook.Recipes.Ingredients.Models
 {
 	public class Chocolate : Ingredient
 	{

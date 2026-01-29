@@ -4,8 +4,8 @@ namespace CookieCookBook.Recipes.Ingredients.Interface
 {
 	public interface IIngredientsRegister
 	{
-		IEnumerable<Ingredient> GetAllIngredients();
+		public IEnumerable<Ingredient> GetAllIngredients();
 
-		Ingredient GetIngredientById(int ingredientId);
+		public Ingredient GetIngredientById(int ingredientId);
 	}
 }
