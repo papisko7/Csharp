@@ -2,6 +2,7 @@
 using CookieCookBook.DataAccess;
 using CookieCookBook.DataAccess.Interface;
 using CookieCookBook.FileAccess;
+using CookieCookBook.FileAccess.Enum;
 using CookieCookBook.Recipes;
 using CookieCookBook.Recipes.Ingredients;
 

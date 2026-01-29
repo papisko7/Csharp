@@ -1,5 +1,6 @@
 ﻿using CookieCookBook.Recipes.Ingredients.Interface;
 using CookieCookBook.Recipes.Ingredients.Interfaces;
+using CookieCookBook.Recipes.Ingredients.Models;
 
 namespace CookieCookBook.Recipes.Ingredients
 {
@@ -22,15 +23,8 @@ namespace CookieCookBook.Recipes.Ingredients
 
 		public Ingredient GetIngredientById(int ingredientId)
 		{
-			foreach (var ingredient in GetAllIngredients())
-			{
-				if (ingredient.Id == ingredientId)
-				{
-					return ingredient;
-				}
-			}
-
-			return null;
+			return GetAllIngredients()
+				.FirstOrDefault(ingredient => ingredient.Id == ingredientId);
 		}
 	}
 }

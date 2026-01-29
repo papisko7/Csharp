@@ -13,6 +13,6 @@ namespace CookieCookBook.App.Interface
 
 		public void PromptToCreateRecipe();
 
-		IEnumerable<Ingredient> ReadIngredientsFromUser();
+		public IEnumerable<Ingredient> ReadIngredientsFromUser();
 	}
 }

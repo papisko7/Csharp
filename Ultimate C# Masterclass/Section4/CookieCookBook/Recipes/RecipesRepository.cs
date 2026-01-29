@@ -1,6 +1,5 @@
 ﻿using CookieCookBook.DataAccess.Interface;
 using CookieCookBook.Recipes.Ingredients.Interface;
-using CookieCookBook.Recipes.Ingredients.Interfaces;
 using CookieCookBook.Recipes.Interface;
 
 namespace CookieCookBook.Recipes

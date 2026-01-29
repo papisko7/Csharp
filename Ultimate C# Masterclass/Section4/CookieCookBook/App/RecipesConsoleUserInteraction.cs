@@ -37,7 +37,6 @@ namespace CookieCookBook.App
 
 					counter++;
 				}
-
 			}
 		}
 
@@ -54,10 +53,10 @@ namespace CookieCookBook.App
 
 		public IEnumerable<Ingredient> ReadIngredientsFromUser()
 		{
-			bool shouldContinue = false;
+			bool shallStop = false;
 			var ingredients = new List<Ingredient>();
 
-			while (!shouldContinue)
+			while (!shallStop)
 			{
 				Console.WriteLine("Add an ingredient by its Id, or type anything else if finished");
 				var userInput = Console.ReadLine();
@@ -77,7 +76,7 @@ namespace CookieCookBook.App
 				}
 				else
 				{
-					shouldContinue = true;
+					shallStop = true;
 				}
 			}
 
