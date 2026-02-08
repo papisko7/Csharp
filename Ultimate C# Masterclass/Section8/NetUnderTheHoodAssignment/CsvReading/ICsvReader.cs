@@ -2,5 +2,5 @@
 
 public interface ICsvReader
 {
-    CsvData Read(string filePath);
+	public CsvData Read(string filePath);
 }
