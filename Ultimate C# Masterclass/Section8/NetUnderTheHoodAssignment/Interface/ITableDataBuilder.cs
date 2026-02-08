@@ -4,5 +4,5 @@ namespace CsvDataAccess.Interface;
 
 public interface ITableDataBuilder
 {
-    ITableData Build(CsvData csvData);
+	public ITableData Build(CsvData csvData);
 }
