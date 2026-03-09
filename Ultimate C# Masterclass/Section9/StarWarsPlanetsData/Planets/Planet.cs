@@ -3,7 +3,7 @@ using StarWarsPlanetsData.Extensions;
 
 namespace StarWarsPlanetsData.Planets
 {
-	public readonly record struct Planet(string Name, int Diameter, int? SurfaceWater, int? Population)
+	public readonly record struct Planet(string Name, int Diameter, int? SurfaceWater, long? Population)
 	{
 		public string Name { get; } = Name ?? throw new ArgumentNullException(nameof(Name));
 
@@ -12,7 +12,7 @@ namespace StarWarsPlanetsData.Planets
 			var name = item.Name;
 			var diameter = int.Parse(item.Diameter);
 
-			var population = item.Population.ToIntOrNull();
+			var population = item.Population.ToLongOrNull();
 			var surfaceWater = item.SurfaceWater.ToIntOrNull();
 
 			return new Planet(

@@ -9,7 +9,7 @@ namespace StarWarsPlanetsData.Planets.Analyzing
 		{
 			var propertyNamesToSelectorMapping = new Dictionary<string,
 				Func<Planet,
-					int?>>()
+					long?>>()
 			{
 				["population"] = p => p.Population,
 				["diameter"] = p => p.Diameter,
@@ -33,7 +33,7 @@ namespace StarWarsPlanetsData.Planets.Analyzing
 
 		private void ShowData(IEnumerable<Planet> planets,
 			string propertyName,
-			Func<Planet, int?> propertySelector)
+			Func<Planet, long?> propertySelector)
 		{
 			var enumerable = planets as Planet[] ?? planets.ToArray();
 
@@ -49,7 +49,7 @@ namespace StarWarsPlanetsData.Planets.Analyzing
 
 		private void ShowData(string descriptor,
 			Planet selectedPlanet,
-			Func<Planet, int?> propertySelector,
+			Func<Planet, long?> propertySelector,
 			string propertyName)
 		{
 			userInteractor.ShowMessage(descriptor + " " + propertyName + " is: " +

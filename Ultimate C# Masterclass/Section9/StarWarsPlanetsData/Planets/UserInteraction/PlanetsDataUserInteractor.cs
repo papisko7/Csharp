@@ -8,11 +8,7 @@ namespace StarWarsPlanetsData.Planets.UserInteraction
 	{
 		public void Show(IEnumerable<Planet> planets)
 		{
-			foreach (var planet in planets)
-			{
-				userInteractor.ShowMessage(
-					planet.ToString());
-			}
+			TablePrinter.Print(planets);
 		}
 
 		public string? ChooseDataToBeShown(IEnumerable<string> propertiesThatCanBeChosen)
@@ -30,6 +26,36 @@ namespace StarWarsPlanetsData.Planets.UserInteraction
 		public void ShowMessage(string message)
 		{
 			userInteractor.ShowMessage(message);
+		}
+	}
+
+	public class TablePrinter
+	{
+		private const int COLUMN_WIDTH = 20;
+
+		public static void Print<T>(IEnumerable<T> items)
+		{
+			var properties = typeof(T).GetProperties();
+
+			foreach (var property in properties)
+			{
+				Console.Write($"{{0, -{COLUMN_WIDTH}}}|", property.Name);
+			}
+
+			Console.WriteLine();
+			Console.WriteLine(new string('-',
+				properties.Length * (COLUMN_WIDTH + 1)));
+			Console.WriteLine();
+
+			foreach (var item in items)
+			{
+				foreach (var property in properties)
+				{
+					var value = property.GetValue(item)?.ToString() ?? string.Empty;
+					Console.Write($"{{0, -{COLUMN_WIDTH}}}|", value);
+				}
+				Console.WriteLine();
+			}
 		}
 	}
 }

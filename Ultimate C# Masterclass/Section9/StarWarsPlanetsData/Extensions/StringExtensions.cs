@@ -8,5 +8,12 @@
 				? resultParsed
 				: null;
 		}
+
+		public static long? ToLongOrNull(this string? input)
+		{
+			return long.TryParse(input, out var resultParsed)
+				? resultParsed
+				: null;
+		}
 	}
 }
