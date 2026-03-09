@@ -1,6 +1,4 @@
-﻿using StarWarsPlanetsData.Planets;
-
-namespace StarWarsPlanetsData.Planets.Analyzing;
+﻿namespace StarWarsPlanetsData.Planets.Analyzing;
 
 public interface IPlanetsDataAnalyzer
 {
