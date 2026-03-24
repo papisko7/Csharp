@@ -1,0 +1,15 @@
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\bin\Debug\net10.0\Section6.exe
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\bin\Debug\net10.0\Section6.deps.json
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\bin\Debug\net10.0\Section6.runtimeconfig.json
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\bin\Debug\net10.0\Section6.dll
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\bin\Debug\net10.0\Section6.pdb
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.AssemblyInfoInputs.cache
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.AssemblyInfo.cs
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.csproj.CoreCompileInputs.cache
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.sourcelink.json
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.dll
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\refint\Section6.dll
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.pdb
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\Section6.genruntimeconfig.cache
+E:\Repositories\Csharp\Ultimate C# Masterclass\Section6\Section6\obj\Debug\net10.0\ref\Section6.dll
