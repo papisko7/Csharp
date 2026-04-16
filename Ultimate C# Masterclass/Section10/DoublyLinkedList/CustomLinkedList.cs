@@ -4,171 +4,190 @@ namespace DoublyLinkedList;
 
 public class CustomLinkedList<T> : ILinkedList<T>
 {
-    public class Node(T value)
-    {
-        public Node? Previous { get; set; }
-        
-        public Node? Next { get; set; }
-        
-        public T Value { get; } = value;
-    }
-    
-    private Node? _head;
-    private Node? _tail;
+	public class Node(T? value)
+	{
+		public Node? Previous { get; set; }
 
-    public int Count { get; private set; }
+		public Node? Next { get; set; }
 
-    public bool IsReadOnly => false;
+		public T? Value { get; } = value;
+	}
 
-    public void AddToFront(T item)
-    {
-        var newNode = new Node(item);
+	private Node? _head;
+	private Node? _tail;
 
-        if (_head != null)
-        {
-            newNode.Next = _head;
-            _head.Previous = newNode;
-        }
+	public int Count { get; private set; }
 
-        else
-        {
-            _tail = newNode;
-        }
-        
-        _head = newNode;
-        Count++;
-    }
+	public bool IsReadOnly => false;
 
-    public void AddToEnd(T item)
-    {
-        var newNode = new Node(item);
+	public void AddToFront(T? item)
+	{
+		var newNode = new Node(item);
 
-        if (_tail != null)
-        {
-            newNode.Previous = _tail;
-            _tail.Next = newNode;
-        }
+		if (_head != null)
+		{
+			newNode.Next = _head;
+			_head.Previous = newNode;
+		}
 
-        else
-        {
-            _head =  newNode;
-        }
+		else
+		{
+			_tail = newNode;
+		}
 
-        _tail = newNode;
-        Count++;
-    }
-    
-    public void Add(T item)
-    {
-        AddToEnd(item);
-    }
-    
-    public bool Contains(T item)
-    {
-        var currentNode = _head;
+		_head = newNode;
+		Count++;
+	}
 
-        while (currentNode != null)
-        {
-            if (Equals(currentNode.Value, item))
-            {
-                return true;
-            }
+	public void AddToEnd(T? item)
+	{
+		var newNode = new Node(item);
 
-            currentNode = currentNode.Next;
-        }
+		if (_tail != null)
+		{
+			newNode.Previous = _tail;
+			_tail.Next = newNode;
+		}
 
-        return false;
-    }
+		else
+		{
+			_head = newNode;
+		}
 
-    public void Clear()
-    {
-        _head = null;
-        _tail = null;
-        Count = 0;
-    }
+		_tail = newNode;
+		Count++;
+	}
 
-    public void CopyTo(T[] array, int arrayIndex)
-    {
-        if (array == null)
-        {
-            throw new ArgumentNullException(nameof(array), "Array cannot be null.");
-        }
-        
-        if (arrayIndex < 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(arrayIndex), "Index cannot be negative.");
-        }
-        
-        if (array.Length - arrayIndex < Count)
-        {
-            throw new ArgumentException("The destination array does not have enough space.");
-        }
-        
-        var currentNode = _head;
-        while (currentNode != null)
-        {
-            array[arrayIndex] = currentNode.Value;
-            arrayIndex++;
-            currentNode = currentNode.Next;
-        }
-    }
+	public void Add(T? item)
+	{
+		AddToEnd(item);
+	}
 
-    public bool Remove(T item)
-    {
-        var currentNode = _head;
-    
-        while (currentNode != null)
-        {
-            if (Equals(currentNode.Value, item))
-            {
-                if (currentNode == _head)
-                {
-                    _head = currentNode.Next;
-                    
-                    if (_head != null)
-                    {
-                        _head.Previous = null;
-                    }
-                    else
-                    {
-                        _tail = null;
-                    }
-                }
-                else if (currentNode == _tail)
-                {
-                    _tail = currentNode.Previous;
+	public bool Contains(T? item)
+	{
+		var currentNode = _head;
 
-                    _tail?.Next = null;
-                }
-                else
-                {
-                    currentNode.Previous!.Next = currentNode.Next;
-                    currentNode.Next!.Previous = currentNode.Previous;
-                }
+		while (currentNode != null)
+		{
+			if (Equals(currentNode.Value, item))
+			{
+				return true;
+			}
 
-                Count--;     
-                return true; 
-            }
-            
-            currentNode = currentNode.Next;
-        }
-    
-        return false; 
-    }
+			currentNode = currentNode.Next;
+		}
 
-    public IEnumerator<T> GetEnumerator()
-    {
-        var currentNode = _head;
+		return false;
+	}
 
-        while (currentNode != null)
-        {
-            yield return currentNode.Value;
-            currentNode = currentNode.Next;
-        }
-    }
+	public void Clear()
+	{
+		_head = null;
+		_tail = null;
+		Count = 0;
+	}
 
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return GetEnumerator();
-    }
+	public void CopyTo(T?[] array, int arrayIndex)
+	{
+		if (array == null)
+		{
+			throw new ArgumentNullException(nameof(array), "Array cannot be null.");
+		}
+
+		if (arrayIndex < 0)
+		{
+			throw new ArgumentOutOfRangeException(nameof(arrayIndex), "Index cannot be negative.");
+		}
+
+		if (array.Length - arrayIndex < Count)
+		{
+			throw new ArgumentException("The destination array does not have enough space.");
+		}
+
+		var currentNode = _head;
+		while (currentNode != null)
+		{
+			array[arrayIndex] = currentNode.Value;
+			arrayIndex++;
+			currentNode = currentNode.Next;
+		}
+	}
+
+	public bool Remove(T? item)
+	{
+		var currentNode = _head;
+
+		while (currentNode != null)
+		{
+			if (EqualityComparer<T?>.Default.Equals(currentNode.Value, item))
+			{
+				RemoveNode(currentNode);
+				return true;
+			}
+
+			currentNode = currentNode.Next;
+		}
+
+		return false;
+	}
+
+	private void RemoveNode(Node node)
+	{
+		if (node == _head)
+		{
+			_head = node.Next;
+
+			if (_head != null)
+			{
+				_head.Previous = null;
+			}
+			else
+			{
+				_tail = null;
+			}
+		}
+		else if (node == _tail)
+		{
+			_tail = node.Previous;
+
+			if (_tail != null)
+			{
+				_tail.Next = null;
+			}
+		}
+		else
+		{
+			node.Previous!.Next = node.Next;
+			node.Next!.Previous = node.Previous;
+		}
+
+		Count--;
+	}
+
+	public IEnumerator<T?> GetEnumerator()
+	{
+		var currentNode = _head;
+
+		while (currentNode != null)
+		{
+			yield return currentNode.Value;
+			currentNode = currentNode.Next;
+		}
+	}
+
+	IEnumerator<T> IEnumerable<T>.GetEnumerator()
+	{
+		var currentNode = _head;
+
+		while (currentNode != null)
+		{
+			yield return currentNode.Value!;
+			currentNode = currentNode.Next;
+		}
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return GetEnumerator();
+	}
 }
