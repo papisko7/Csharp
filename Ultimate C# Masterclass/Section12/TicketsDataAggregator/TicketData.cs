@@ -2,21 +2,21 @@
 
 namespace TicketsDataAggregator
 {
-	public class TicketData
+	public class TicketData(string movieName,
+		DateTime date, DateTime time)
 	{
-		public string MovieName { get; set; }
+		public string MovieName { get; set; } = movieName;
 
-		public DateTime Date { get; set; }
+		public DateTime Date { get; set; } = date;
 
-		public DateTime Time { get; set; }
+		public DateTime Time { get; set; } = time;
 
-		public string ToString()
+		public override string ToString()
 		{
 			var dateStr = Date.ToString("d", CultureInfo.InvariantCulture);
 			var timeStr = Time.ToString("t", CultureInfo.InvariantCulture);
 
 			return $"{MovieName,-20} | {dateStr} | {timeStr}";
-			;
 		}
 	}
 }
