@@ -3,11 +3,11 @@ using System.Text.RegularExpressions;
 
 namespace TicketsDataAggregator
 {
-	public static class TicketParser
+	public  class TicketParser : ITicketParser
 	{
 		private const string TICKET_PATTERN = @"Title:\s*(.*?)\s*Date:\s*(.*?)\s*Time:\s*(.*?)(?=\s*Title:|\s*Visit us:|$)";
 
-		public static IEnumerable<TicketData> ExtractTickets(string text,
+		public IEnumerable<TicketData> ExtractTickets(string text,
 			CultureInfo cultureInfo)
 		{
 			if (string.IsNullOrWhiteSpace(text))

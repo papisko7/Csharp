@@ -2,7 +2,7 @@
 
 namespace TicketsDataAggregator
 {
-	public static class CultureManager
+	public class CultureManager : ICultureManager
 	{
 		private static readonly Dictionary<string, string> DomainCultures = new()
 		{
@@ -11,9 +11,10 @@ namespace TicketsDataAggregator
 			{ ".ja", "ja-JP" }
 		};
 
-		public static CultureInfo GetCulture(string text)
+		public CultureInfo GetCulture(string text)
 		{
-			var matchedDomain = DomainCultures.FirstOrDefault(d => text.Contains(d.Key));
+			var matchedDomain = DomainCultures.FirstOrDefault(d =>
+				text.Contains(d.Key));
 
 			return matchedDomain.Key != null
 				? new CultureInfo(matchedDomain.Value)

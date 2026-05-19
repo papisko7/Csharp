@@ -1,5 +1,9 @@
 ﻿using TicketsDataAggregator;
 
+ICultureManager cultureManager = new CultureManager();
+IPdfTicketExtractor pdfTicketExtractor = new PdfTicketExtractor();
+ITicketParser ticketParser = new TicketParser();
+
 Console.WriteLine("Enter the directory path containing PDFs:");
 var ticketsDirectoryPath = Console.ReadLine();
 
@@ -12,10 +16,10 @@ if (string.IsNullOrWhiteSpace(ticketsDirectoryPath)
 
 var aggregatedTickets = new List<string>();
 
-foreach (var text in PdfTicketExtractor.ExtractTextFromDirectory(ticketsDirectoryPath))
+foreach (var text in pdfTicketExtractor.ExtractTextFromDirectory(ticketsDirectoryPath))
 {
-	var cultureInfo = CultureManager.GetCulture(text);
-	var parsedTickets = TicketParser.ExtractTickets(text, cultureInfo);
+	var cultureInfo = cultureManager.GetCulture(text);
+	var parsedTickets = ticketParser.ExtractTickets(text, cultureInfo);
 
 	aggregatedTickets.AddRange(parsedTickets
 		.Select(ticket => ticket.ToString()));

@@ -3,9 +3,9 @@ using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
 
 namespace TicketsDataAggregator
 {
-	public static class PdfTicketExtractor
+	public class PdfTicketExtractor : IPdfTicketExtractor
 	{
-		public static IEnumerable<string> ExtractTextFromDirectory(string directoryPath)
+		public IEnumerable<string> ExtractTextFromDirectory(string directoryPath)
 		{
 			if (!Directory.Exists(directoryPath))
 			{
