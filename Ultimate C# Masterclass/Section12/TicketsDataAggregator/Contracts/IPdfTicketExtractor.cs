@@ -1,4 +1,4 @@
-﻿namespace TicketsDataAggregator;
+﻿namespace TicketsDataAggregator.Contracts;
 
 public interface IPdfTicketExtractor
 {

@@ -1,33 +1,27 @@
-﻿using TicketsDataAggregator;
+﻿using TicketsDataAggregator.Application;
+using TicketsDataAggregator.Contracts;
+using TicketsDataAggregator.Globalization;
+using TicketsDataAggregator.IO;
+using TicketsDataAggregator.Services;
+using TicketsDataAggregator.UI;
 
 ICultureManager cultureManager = new CultureManager();
 IPdfTicketExtractor pdfTicketExtractor = new PdfTicketExtractor();
 ITicketParser ticketParser = new TicketParser();
+IFileWriter fileWriter = new FileWriter();
+IUserInterface ui = new ConsoleUserInterface();
 
-Console.WriteLine("Enter the directory path containing PDFs:");
-var ticketsDirectoryPath = Console.ReadLine();
+var app = new TicketsAggregatorApp(pdfTicketExtractor,
+	cultureManager,
+	ticketParser,
+	fileWriter);
 
-if (string.IsNullOrWhiteSpace(ticketsDirectoryPath)
-	|| !Directory.Exists(ticketsDirectoryPath))
+var ticketsDirectoryPath = ui.GetInput("Enter the directory path containing PDFs" +
+									   @"(ex. C:\Users\admin\Downloads):");
+if (ticketsDirectoryPath != null)
 {
-	Console.WriteLine("Invalid directory provided");
-	return;
+	var resultFilePath = app.Run(ticketsDirectoryPath);
+	ui.ShowMessage($"Result saved to {resultFilePath}");
 }
 
-var aggregatedTickets = new List<string>();
-
-foreach (var text in pdfTicketExtractor.ExtractTextFromDirectory(ticketsDirectoryPath))
-{
-	var cultureInfo = cultureManager.GetCulture(text);
-	var parsedTickets = ticketParser.ExtractTickets(text, cultureInfo);
-
-	aggregatedTickets.AddRange(parsedTickets
-		.Select(ticket => ticket.ToString()));
-}
-
-var resultFilePath = Path.Combine(ticketsDirectoryPath, "aggregatedTickets.txt");
-File.WriteAllLines(resultFilePath, aggregatedTickets);
-
-Console.WriteLine($"Result saved to {resultFilePath}");
-Console.WriteLine("Press any key to close");
-Console.ReadKey();
+ui.WaitForKey("Press any key to close");

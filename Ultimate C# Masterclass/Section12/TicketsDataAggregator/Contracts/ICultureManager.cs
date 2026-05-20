@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace TicketsDataAggregator;
+namespace TicketsDataAggregator.Contracts;
 
 public interface ICultureManager
 {

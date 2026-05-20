@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
+using TicketsDataAggregator.Models;
 
-namespace TicketsDataAggregator;
+namespace TicketsDataAggregator.Contracts;
 
 public interface ITicketParser
 {
