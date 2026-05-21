@@ -28,78 +28,114 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			textBox1 = new TextBox();
-			textBox2 = new TextBox();
-			checkBox1 = new CheckBox();
-			checkBox2 = new CheckBox();
-			label1 = new Label();
+			minValTxtBx = new TextBox();
+			maxValueTxtBx = new TextBox();
+			integralChckBx = new CheckBox();
+			preciseChBx = new CheckBox();
+			typeSuggestionLbl = new Label();
+			maxValueLbl = new Label();
+			minValueLbl = new Label();
 			SuspendLayout();
 			// 
-			// textBox1
+			// minValTxtBx
 			// 
-			textBox1.Location = new Point(72, 12);
-			textBox1.Name = "textBox1";
-			textBox1.Size = new Size(125, 27);
-			textBox1.TabIndex = 0;
+			minValTxtBx.Location = new Point(175, 12);
+			minValTxtBx.Name = "minValTxtBx";
+			minValTxtBx.Size = new Size(579, 27);
+			minValTxtBx.TabIndex = 0;
 			// 
-			// textBox2
+			// maxValueTxtBx
 			// 
-			textBox2.Location = new Point(72, 57);
-			textBox2.Name = "textBox2";
-			textBox2.Size = new Size(125, 27);
-			textBox2.TabIndex = 1;
+			maxValueTxtBx.Location = new Point(175, 55);
+			maxValueTxtBx.Name = "maxValueTxtBx";
+			maxValueTxtBx.Size = new Size(579, 27);
+			maxValueTxtBx.TabIndex = 1;
 			// 
-			// checkBox1
+			// integralChckBx
 			// 
-			checkBox1.AutoSize = true;
-			checkBox1.Location = new Point(72, 100);
-			checkBox1.Name = "checkBox1";
-			checkBox1.Size = new Size(101, 24);
-			checkBox1.TabIndex = 2;
-			checkBox1.Text = "checkBox1";
-			checkBox1.UseVisualStyleBackColor = true;
+			integralChckBx.AutoSize = true;
+			integralChckBx.CheckAlign = ContentAlignment.MiddleRight;
+			integralChckBx.Checked = true;
+			integralChckBx.CheckState = CheckState.Checked;
+			integralChckBx.Location = new Point(72, 103);
+			integralChckBx.Name = "integralChckBx";
+			integralChckBx.Size = new Size(121, 24);
+			integralChckBx.TabIndex = 2;
+			integralChckBx.Text = "Integral only?";
+			integralChckBx.UseVisualStyleBackColor = true;
 			// 
-			// checkBox2
+			// preciseChBx
 			// 
-			checkBox2.AutoSize = true;
-			checkBox2.Location = new Point(72, 133);
-			checkBox2.Name = "checkBox2";
-			checkBox2.Size = new Size(101, 24);
-			checkBox2.TabIndex = 3;
-			checkBox2.Text = "checkBox2";
-			checkBox2.UseVisualStyleBackColor = true;
+			preciseChBx.AutoSize = true;
+			preciseChBx.CheckAlign = ContentAlignment.MiddleRight;
+			preciseChBx.Location = new Point(51, 133);
+			preciseChBx.Name = "preciseChBx";
+			preciseChBx.Size = new Size(142, 24);
+			preciseChBx.TabIndex = 3;
+			preciseChBx.Text = "Must be precise?";
+			preciseChBx.UseVisualStyleBackColor = true;
+			preciseChBx.Visible = false;
 			// 
-			// label1
+			// typeSuggestionLbl
 			// 
-			label1.AutoSize = true;
-			label1.Location = new Point(85, 180);
-			label1.Name = "label1";
-			label1.Size = new Size(50, 20);
-			label1.TabIndex = 4;
-			label1.Text = "label1";
+			typeSuggestionLbl.AutoSize = true;
+			typeSuggestionLbl.BackColor = SystemColors.ActiveCaption;
+			typeSuggestionLbl.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+			typeSuggestionLbl.Location = new Point(31, 174);
+			typeSuggestionLbl.Name = "typeSuggestionLbl";
+			typeSuggestionLbl.Size = new Size(241, 20);
+			typeSuggestionLbl.TabIndex = 4;
+			typeSuggestionLbl.Text = "Suggested type: not enough data";
+			// 
+			// maxValueLbl
+			// 
+			maxValueLbl.AutoSize = true;
+			maxValueLbl.Location = new Point(89, 62);
+			maxValueLbl.Name = "maxValueLbl";
+			maxValueLbl.Size = new Size(80, 20);
+			maxValueLbl.TabIndex = 5;
+			maxValueLbl.Text = "Max Value:";
+			// 
+			// minValueLbl
+			// 
+			minValueLbl.AutoSize = true;
+			minValueLbl.Location = new Point(92, 19);
+			minValueLbl.Name = "minValueLbl";
+			minValueLbl.Size = new Size(77, 20);
+			minValueLbl.TabIndex = 6;
+			minValueLbl.Text = "Min Value:";
 			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(800, 450);
-			Controls.Add(label1);
-			Controls.Add(checkBox2);
-			Controls.Add(checkBox1);
-			Controls.Add(textBox2);
-			Controls.Add(textBox1);
+			BackColor = SystemColors.ActiveCaption;
+			ClientSize = new Size(800, 217);
+			Controls.Add(minValueLbl);
+			Controls.Add(maxValueLbl);
+			Controls.Add(typeSuggestionLbl);
+			Controls.Add(preciseChBx);
+			Controls.Add(integralChckBx);
+			Controls.Add(maxValueTxtBx);
+			Controls.Add(minValTxtBx);
+			Cursor = Cursors.Default;
+			ForeColor = SystemColors.ControlText;
+			FormBorderStyle = FormBorderStyle.FixedSingle;
 			Name = "Form1";
-			Text = "Form1";
+			Text = "C# Numeric Types";
+			Load += Form1_Load;
 			ResumeLayout(false);
 			PerformLayout();
 		}
 
 		#endregion
 
-		private TextBox textBox1;
-		private TextBox textBox2;
-		private CheckBox checkBox1;
-		private CheckBox checkBox2;
-		private Label label1;
+		private TextBox minValTxtBx;
+		private TextBox maxValueTxtBx;
+		private CheckBox integralChckBx;
+		private CheckBox preciseChBx;
+		private Label typeSuggestionLbl;
+		private Label maxValueLbl;
+		private Label minValueLbl;
 	}
 }
