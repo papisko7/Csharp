@@ -19,28 +19,16 @@
 			Assert.Throws<ArgumentException>(() => Fibonacci.Generate(n));
 		}
 
+		// Fixed the method name to reflect reality accuracy
 		[TestCase(0, new int[] { })]
 		[TestCase(1, new int[] { 0 })]
-		public void Generate_WhenInputIsZeroOrOne_ReturnsSequenceWithOnlyZero(int n, int[] expected)
+		[TestCase(2, new int[] { 0, 1 })]
+		public void Generate_WhenInputIsZeroOneOrTwo_ReturnsCorrectSequence(int n, int[] expected)
 		{
 			// Act
 			var result = Fibonacci.Generate(n);
 
-			// Assert
-			Assert.That(expected, Is.EqualTo(result));
-		}
-
-		[Test]
-		public void Generate_WhenInputIsTwo_ReturnsFirstTwoFibonacciNumers()
-		{
-			// Arrange
-			int n = 2;
-			var expected = new List<int> { 0, 1 };
-
-			// Act
-			var result = Fibonacci.Generate(n);
-
-			// Assert
+			// Assert: Swapped to (actual, expected) convention
 			Assert.That(result, Is.EqualTo(expected));
 		}
 
@@ -52,8 +40,22 @@
 			// Act
 			var result = Fibonacci.Generate(n);
 
-			// Assert
+			// Assert: Swapped to (actual, expected) convention
 			Assert.That(result, Is.EqualTo(expectedSequence));
+		}
+
+		// Fixed name to clearly state the expected behavior/outcome
+		[Test]
+		public void Generate_WhenInputIsFortySix_ReturnsSequenceEndingWithMaxFibonacciNumber()
+		{
+			// Arrange
+			const int expectedLastNumber = 1134903170;
+
+			// Act
+			var result = Fibonacci.Generate(46);
+
+			// Assert
+			Assert.That(result.Last(), Is.EqualTo(expectedLastNumber));
 		}
 	}
 }
