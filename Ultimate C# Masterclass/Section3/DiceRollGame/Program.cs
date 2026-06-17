@@ -1,4 +1,4 @@
-﻿using DiceRollGame.App;
+﻿using DiceRollGame.Application;
 using DiceRollGame.Model;
 using DiceRollGame.Services;
 using DiceRollGame.Ui;
