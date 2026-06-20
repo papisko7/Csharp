@@ -1,0 +1,52 @@
+@page
+@model MvcApp.Pages.Students.EditModel
+@{
+    ViewData["Title"] = "Edit Student";
+    Layout = "_Layout";
+}
+
+<h2>Edit Student - @Model.Student.StudentId</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}
+
+<div class="form-container">
+    <form method="post">
+        <input type="hidden" asp-for="Student.StudentId" />
+
+        <div class="form-group">
+            <label asp-for="Student.FirstName">FirstName</label>
+            <input asp-for="Student.FirstName" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Student.LastName">LastName</label>
+            <input asp-for="Student.LastName" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Student.Age">Age</label>
+            <input asp-for="Student.Age" type="number" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Student.GroupId">Group</label>
+            <select asp-for="Student.GroupId" class="form-control" required>
+                <option value="">-- Select Group --</option>
+                @foreach (var group in Model.Groups)
+                {
+                    <option value="@group.GroupId" selected="@(group.GroupId == Model.Student.GroupId)">@group.Name</option>
+                }
+            </select>
+        </div>
+
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/Students" class="btn" style="background-color: #6c757d; color: white; margin-left: 10px;">Cancel</a>
+        </div>
+    </form>
+</div>

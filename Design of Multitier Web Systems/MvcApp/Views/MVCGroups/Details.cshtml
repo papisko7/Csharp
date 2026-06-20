@@ -1,0 +1,6 @@
+@model MvcApp.Annotations.Group
+
+<h2>Group Details: @Model.Name</h2>
+<partial name="_StudentListPartial" model="Model.Students" />
+
+<a asp-action="Index" class="btn btn-secondary">Back to list</a>

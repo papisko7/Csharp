@@ -1,0 +1,58 @@
+@page
+@model MvcApp.Pages.Groups.IndexModel
+@{
+    ViewData["Title"] = "Groups";
+    Layout = "_Layout";
+}
+
+<h2>Groups List</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert alert-success">
+        @Model.SuccessMessage
+    </div>
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Group ID</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var group in Model.Groups)
+        {
+            <tr>
+                <td>@group.GroupId</td>
+                <td>@group.Name</td>
+                <td class="action-links">
+                    <a href="/Groups/Edit?id=@group.GroupId">Edit</a> |
+                    <a href="/Groups/Delete?id=@group.GroupId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="form-container">
+    <h3 style="text-align: center;">Add New Group</h3>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="NewGroup.Name">Name</label>
+            <input asp-for="NewGroup.Name" class="form-control" required />
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </form>
+</div>

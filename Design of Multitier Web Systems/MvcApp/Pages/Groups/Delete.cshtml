@@ -1,0 +1,47 @@
+@page
+@model MvcApp.Pages.Groups.DeleteModel
+@{
+    ViewData["Title"] = "Delete Group";
+    Layout = "_Layout";
+}
+
+<h2>Delete Group</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}
+
+<h3>Are you sure you want to delete this group?</h3>
+<div>
+    <hr />
+    <dl style="max-width: 600px;">
+        <dt>Group ID</dt>
+        <dd>@Model.Group.GroupId</dd>
+
+        <dt>Name</dt>
+        <dd>@Model.Group.Name</dd>
+
+        <dt>Number of Students</dt>
+        <dd>@Model.StudentCount</dd>
+    </dl>
+
+    @if (Model.StudentCount > 0)
+    {
+        <div class="alert alert-danger">
+            <strong>Cannot delete this group!</strong> There are @Model.StudentCount student(s) assigned to this group.
+            Please reassign or remove these students before deleting the group.
+        </div>
+        <a href="/Groups" class="btn" style="background-color: #6c757d; color: white;">Back to List</a>
+    }
+    else
+    {
+        <form method="post">
+            <input type="hidden" asp-for="Group.GroupId" />
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a href="/Groups" class="btn" style="background-color: #6c757d; color: white; margin-left: 10px;">Cancel</a>
+        </form>
+    }
+</div>

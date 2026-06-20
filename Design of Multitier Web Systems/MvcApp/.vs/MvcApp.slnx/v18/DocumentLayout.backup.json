@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73547A4A-7FD2-4AB9-8870-B4A85FF32120}|..\\MvcApp.Tests\\MvcApp.Tests.csproj|c:\\users\\kkowa\\source\\repos\\projektowanie-wielowarstwowych-systemow-internetowych\\mvcapp.tests\\performance\\apiperformancetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73547A4A-7FD2-4AB9-8870-B4A85FF32120}|..\\MvcApp.Tests\\MvcApp.Tests.csproj|c:\\users\\kkowa\\source\\repos\\projektowanie-wielowarstwowych-systemow-internetowych\\mvcapp.tests\\integration\\studentscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73547A4A-7FD2-4AB9-8870-B4A85FF32120}|..\\MvcApp.Tests\\MvcApp.Tests.csproj|c:\\users\\kkowa\\source\\repos\\projektowanie-wielowarstwowych-systemow-internetowych\\mvcapp.tests\\integration\\groupscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73547A4A-7FD2-4AB9-8870-B4A85FF32120}|..\\MvcApp.Tests\\MvcApp.Tests.csproj|c:\\users\\kkowa\\source\\repos\\projektowanie-wielowarstwowych-systemow-internetowych\\mvcapp.tests\\infrastructure\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73547A4A-7FD2-4AB9-8870-B4A85FF32120}|..\\MvcApp.Tests\\MvcApp.Tests.csproj|c:\\users\\kkowa\\source\\repos\\projektowanie-wielowarstwowych-systemow-internetowych\\mvcapp.tests\\handshake\\apihandshaketests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73547A4A-7FD2-4AB9-8870-B4A85FF32120}|..\\MvcApp.Tests\\MvcApp.Tests.csproj|c:\\users\\kkowa\\source\\repos\\projektowanie-wielowarstwowych-systemow-internetowych\\mvcapp.tests\\mvcapp.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E725C2E4-154F-8E3D-C94D-23B9A1B3396D}|MvcApp.csproj|c:\\users\\kkowa\\source\\repos\\projektowanie-wielowarstwowych-systemow-internetowych\\mvcapp\\mvcapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E725C2E4-154F-8E3D-C94D-23B9A1B3396D}|MvcApp.csproj|solutionrelative:mvcapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiPerformanceTests.cs",
+              "DocumentMoniker": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Performance\\ApiPerformanceTests.cs",
+              "RelativeDocumentMoniker": "..\\MvcApp.Tests\\Performance\\ApiPerformanceTests.cs",
+              "ToolTip": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Performance\\ApiPerformanceTests.cs",
+              "RelativeToolTip": "..\\MvcApp.Tests\\Performance\\ApiPerformanceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:53:45.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Integration\\StudentsControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\MvcApp.Tests\\Integration\\StudentsControllerTests.cs",
+              "ToolTip": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Integration\\StudentsControllerTests.cs",
+              "RelativeToolTip": "..\\MvcApp.Tests\\Integration\\StudentsControllerTests.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:53:37.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomWebApplicationFactory.cs",
+              "DocumentMoniker": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Infrastructure\\CustomWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "..\\MvcApp.Tests\\Infrastructure\\CustomWebApplicationFactory.cs",
+              "ToolTip": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Infrastructure\\CustomWebApplicationFactory.cs",
+              "RelativeToolTip": "..\\MvcApp.Tests\\Infrastructure\\CustomWebApplicationFactory.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:52:33.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GroupsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Integration\\GroupsControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\MvcApp.Tests\\Integration\\GroupsControllerTests.cs",
+              "ToolTip": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Integration\\GroupsControllerTests.cs",
+              "RelativeToolTip": "..\\MvcApp.Tests\\Integration\\GroupsControllerTests.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:51:51.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MvcApp.Tests",
+              "DocumentMoniker": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\MvcApp.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\MvcApp.Tests\\MvcApp.Tests.csproj",
+              "ToolTip": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\MvcApp.Tests.csproj",
+              "RelativeToolTip": "..\\MvcApp.Tests\\MvcApp.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-18T07:50:03.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MvcApp",
+              "DocumentMoniker": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp\\MvcApp.csproj",
+              "RelativeDocumentMoniker": "MvcApp.csproj",
+              "ToolTip": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp\\MvcApp.csproj",
+              "RelativeToolTip": "MvcApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-18T07:49:46.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiHandshakeTests.cs",
+              "DocumentMoniker": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Handshake\\ApiHandshakeTests.cs",
+              "RelativeDocumentMoniker": "..\\MvcApp.Tests\\Handshake\\ApiHandshakeTests.cs",
+              "ToolTip": "C:\\Users\\kkowa\\source\\repos\\Projektowanie-Wielowarstwowych-Systemow-Internetowych\\MvcApp.Tests\\Handshake\\ApiHandshakeTests.cs",
+              "RelativeToolTip": "..\\MvcApp.Tests\\Handshake\\ApiHandshakeTests.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:23:07.651Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

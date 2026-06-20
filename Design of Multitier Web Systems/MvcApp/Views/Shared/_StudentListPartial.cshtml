@@ -1,0 +1,22 @@
+@model IEnumerable<MvcApp.Annotations.Student>
+
+<h4>Studenci przypisani do grupy:</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Wiek</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Age</td>
+            </tr>
+        }
+    </tbody>
+</table>

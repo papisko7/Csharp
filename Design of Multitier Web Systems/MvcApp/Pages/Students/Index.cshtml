@@ -1,0 +1,78 @@
+@page
+@model MvcApp.Pages.Students.IndexModel
+@{
+    ViewData["Title"] = "Students";
+    Layout = "_Layout";
+}
+
+<h2>Students List</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert alert-success">
+        @Model.SuccessMessage
+    </div>
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Group</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.Group?.Name</td>
+                <td class="action-links">
+                    <a href="/Students/Edit?id=@student.StudentId">Edit</a> |
+                    <a href="/Students/Delete?id=@student.StudentId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="form-container">
+    <h3 style="text-align: center;">Add New Student</h3>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="NewStudent.FirstName">FirstName</label>
+            <input asp-for="NewStudent.FirstName" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="NewStudent.LastName">LastName</label>
+            <input asp-for="NewStudent.LastName" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="NewStudent.Age">Age</label>
+            <input asp-for="NewStudent.Age" type="number" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="NewStudent.GroupId">Group</label>
+            <select asp-for="NewStudent.GroupId" class="form-control" required>
+                <option value="">-- Select Group --</option>
+                @foreach (var group in Model.Groups)
+                {
+                    <option value="@group.GroupId">@group.Name</option>
+                }
+            </select>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </form>
+</div>
