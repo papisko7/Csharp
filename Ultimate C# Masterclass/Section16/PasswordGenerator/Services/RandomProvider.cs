@@ -1,4 +1,6 @@
-﻿namespace PasswordGenerator.Services;
+﻿using PasswordGenerator.Services.Abstractions;
+
+namespace PasswordGenerator.Services;
 
 public class RandomProvider : IRandomProvider
 {

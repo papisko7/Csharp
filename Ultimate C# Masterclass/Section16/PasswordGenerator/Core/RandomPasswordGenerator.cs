@@ -1,9 +1,13 @@
-﻿using PasswordGenerator.Services;
+﻿using PasswordGenerator.Core.Abstractions;
+using PasswordGenerator.Services.Abstractions;
 
 namespace PasswordGenerator.Core;
 
-public class RandomPasswordGenerator(IRandomProvider _randomProvider, ICharacterSetProvider _characterSetProvider)
+public class RandomPasswordGenerator(IRandomProvider _randomProvider) : IRandomPasswordGenerator
 {
+	private const string STANDARD_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+	private const string SPECIAL_CHARS = "!@#$%^&*()_-+=";
+
 	public string Generate(int minValue, int maxValue,
 		bool useSpecial)
 	{
@@ -11,7 +15,7 @@ public class RandomPasswordGenerator(IRandomProvider _randomProvider, ICharacter
 
 		var targetLength = _randomProvider.GenerateIntegerFromMinToMaxValue(minValue, maxValue + 1);
 
-		var allowedCharacters = _characterSetProvider.GetAllowedCharacters(useSpecial);
+		var allowedCharacters = GetAllowedCharacters(useSpecial);
 
 		return string.Create(targetLength, allowedCharacters, (span, alphabet) =>
 		{
@@ -26,5 +30,12 @@ public class RandomPasswordGenerator(IRandomProvider _randomProvider, ICharacter
 	{
 		ArgumentOutOfRangeException.ThrowIfLessThan(minValue, 1);
 		ArgumentOutOfRangeException.ThrowIfLessThan(maxValue, minValue);
+	}
+
+	private static string GetAllowedCharacters(bool useSpecial)
+	{
+		return useSpecial ?
+			$"{STANDARD_CHARS}{SPECIAL_CHARS}" :
+			STANDARD_CHARS;
 	}
 }

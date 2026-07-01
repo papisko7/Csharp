@@ -1,10 +1,10 @@
 ﻿using PasswordGenerator.Core;
+using PasswordGenerator.Core.Abstractions;
 using PasswordGenerator.Services;
+using PasswordGenerator.Services.Abstractions;
 
 IRandomProvider randomProvider = new RandomProvider();
-ICharacterSetProvider characterSetProvider = new CharacterSetProvider();
-
-var passwordGenerator = new RandomPasswordGenerator(randomProvider, characterSetProvider);
+IRandomPasswordGenerator passwordGenerator = new RandomPasswordGenerator(randomProvider);
 
 for (int i = 0; i < 10; i++)
 {
