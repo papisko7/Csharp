@@ -2,7 +2,7 @@
 
 public class RandomProvider : IRandomProvider
 {
-	private readonly Random _random = new Random();
+	private readonly Random _random = new();
 
 	public int GenerateIntegerFromMinToMaxValue(int minValue, int maxValue)
 	{

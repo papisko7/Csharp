@@ -4,7 +4,8 @@ namespace PasswordGenerator.Core;
 
 public class RandomPasswordGenerator(IRandomProvider _randomProvider, ICharacterSetProvider _characterSetProvider)
 {
-	public string Generate(int minValue, int maxValue, bool useSpecial)
+	public string Generate(int minValue, int maxValue,
+		bool useSpecial)
 	{
 		ValidateRange(minValue, maxValue);
 
@@ -23,15 +24,7 @@ public class RandomPasswordGenerator(IRandomProvider _randomProvider, ICharacter
 
 	private static void ValidateRange(int minValue, int maxValue)
 	{
-		if (minValue < 1)
-		{
-			throw new ArgumentOutOfRangeException(
-				$"Minimal value (left range) must be greater than 0");
-		}
-		if (maxValue < minValue)
-		{
-			throw new ArgumentOutOfRangeException(
-				$"Minimal random (left range) value must be smaller than maximal value (right range)");
-		}
+		ArgumentOutOfRangeException.ThrowIfLessThan(minValue, 1);
+		ArgumentOutOfRangeException.ThrowIfLessThan(maxValue, minValue);
 	}
 }
