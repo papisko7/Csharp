@@ -2,5 +2,5 @@
 
 public interface IRandomProvider
 {
-	int GenerateIntegerFromMinToMaxValue(int minValue, int maxValue);
+	int GenerateIntegerFromMinToLessThanMaxValue(int minValue, int maxValue);
 }

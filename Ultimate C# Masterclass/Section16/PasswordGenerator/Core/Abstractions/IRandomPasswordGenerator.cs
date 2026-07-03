@@ -2,5 +2,5 @@
 
 public interface IRandomPasswordGenerator
 {
-	string Generate(int minValue, int maxValue, bool useSpecial);
+	string GeneratePassword(int minValue, int maxValue, bool useSpecial);
 }

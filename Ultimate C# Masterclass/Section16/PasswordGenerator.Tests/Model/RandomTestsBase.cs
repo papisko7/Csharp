@@ -5,6 +5,10 @@ namespace PasswordGenerator.Tests.Unit;
 
 internal abstract class RandomTestsBase
 {
+	private protected const int STANDARD_ALPHABET_LENGTH = 36;
+	private protected const int SPECIAL_ALPHABET_LENGTH = 50;
+	private const int START_OF_ALPHABET = 0;
+
 	protected IRandomProvider RandomProviderMock { get; private set; }
 
 	[SetUp]
@@ -13,11 +17,10 @@ internal abstract class RandomTestsBase
 		RandomProviderMock = Substitute.For<IRandomProvider>();
 	}
 
-	protected void MockAlphabetSelections(int alphabetLength)
+	protected void WillReturnCharacterIndicies(int alphabetLength, params int[] indicies)
 	{
-		var currentCharacterIndex = 0;
 		RandomProviderMock
-			.GenerateIntegerFromMinToMaxValue(0, alphabetLength)
-			.Returns(_ => currentCharacterIndex++);
+		.GenerateIntegerFromMinToLessThanMaxValue(START_OF_ALPHABET, alphabetLength)
+		.Returns(indicies[0], indicies.Skip(1).ToArray());
 	}
 }

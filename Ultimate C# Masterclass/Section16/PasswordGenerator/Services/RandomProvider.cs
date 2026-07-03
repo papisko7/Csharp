@@ -6,7 +6,7 @@ public class RandomProvider : IRandomProvider
 {
 	private readonly Random _random = new();
 
-	public int GenerateIntegerFromMinToMaxValue(int minValue, int maxValue)
+	public int GenerateIntegerFromMinToLessThanMaxValue(int minValue, int maxValue)
 	{
 		return _random.Next(minValue, maxValue);
 	}

@@ -6,9 +6,6 @@ namespace PasswordGenerator.Tests.Unit;
 [TestFixture]
 internal class RandomPasswordGeneratorTests : RandomTestsBase
 {
-	private const int STANDARD_ALPHABET_LENGTH = 36;
-	private const int SPECIAL_ALPHABET_LENGTH = 50;
-
 	private RandomPasswordGenerator _randomPasswordGeneratorSut;
 
 	[SetUp]
@@ -17,15 +14,15 @@ internal class RandomPasswordGeneratorTests : RandomTestsBase
 		_randomPasswordGeneratorSut = new RandomPasswordGenerator(RandomProviderMock);
 	}
 
-	#region Happy Paths (Ścieżki Optymistyczne)
+	#region Happy Paths 
 
 	[Test]
 	public void Generate_PasswordGenerationWithoutSpecialCharacters_ReturnsExpectedPassword()
 	{
-		RandomProviderMock.GenerateIntegerFromMinToMaxValue(5, 11).Returns(6);
-		MockAlphabetSelections(STANDARD_ALPHABET_LENGTH);
+		RandomProviderMock.GenerateIntegerFromMinToLessThanMaxValue(5, 11).Returns(6);
+		WillReturnCharacterIndicies(STANDARD_ALPHABET_LENGTH, 0, 1, 2, 3, 4, 5);
 
-		var result = _randomPasswordGeneratorSut.Generate(5, 10, useSpecial: false);
+		var result = _randomPasswordGeneratorSut.GeneratePassword(5, 10, useSpecial: false);
 
 		Assert.That(result, Is.EqualTo("ABCDEF"));
 	}
@@ -33,34 +30,34 @@ internal class RandomPasswordGeneratorTests : RandomTestsBase
 	[Test]
 	public void Generate_PasswordGenerationWithSpecialCharacters_ReturnsExpectedPasswordIncludingSpecials()
 	{
-		RandomProviderMock.GenerateIntegerFromMinToMaxValue(2, 6).Returns(3);
-		MockAlphabetSelections(SPECIAL_ALPHABET_LENGTH);
+		RandomProviderMock.GenerateIntegerFromMinToLessThanMaxValue(10, 16).Returns(5);
+		WillReturnCharacterIndicies(SPECIAL_ALPHABET_LENGTH, 23, 24, 25, 36, 37);
 
-		var result = _randomPasswordGeneratorSut.Generate(2, 5, useSpecial: true);
+		var result = _randomPasswordGeneratorSut.GeneratePassword(10, 15, useSpecial: true);
 
-		Assert.That(result, Is.EqualTo("ABC"));
+		Assert.That(result, Is.EqualTo("XYZ!@"));
 	}
 
 	[Test]
 	public void Generate_WhenMinAndMaxAreEqualToEachOther_ReturnsPasswordOfThatExactLength()
 	{
-		RandomProviderMock.GenerateIntegerFromMinToMaxValue(5, 6).Returns(5);
-		MockAlphabetSelections(STANDARD_ALPHABET_LENGTH);
+		RandomProviderMock.GenerateIntegerFromMinToLessThanMaxValue(5, 6).Returns(5);
+		WillReturnCharacterIndicies(STANDARD_ALPHABET_LENGTH, 0, 1, 2, 3, 4);
 
-		var result = _randomPasswordGeneratorSut.Generate(5, 5, useSpecial: false);
+		var result = _randomPasswordGeneratorSut.GeneratePassword(5, 5, useSpecial: false);
 
 		Assert.That(result, Is.EqualTo("ABCDE"));
 	}
 
 	#endregion
 
-	#region Edge Cases (Przypadki Brzegowe)
+	#region Edge Cases 
 
 	[Test]
 	public void Generate_WhenMinValueIsLessThanOne_ThrowsArgumentOutOfRangeException()
 	{
 		var exception = Assert.Throws<ArgumentOutOfRangeException>(() =>
-			_randomPasswordGeneratorSut.Generate(0, 5, useSpecial: false));
+			_randomPasswordGeneratorSut.GeneratePassword(0, 5, useSpecial: false));
 
 		Assert.That(exception.ParamName, Is.EqualTo("minValue"));
 	}
@@ -69,7 +66,7 @@ internal class RandomPasswordGeneratorTests : RandomTestsBase
 	public void Generate_WhenMaxValueIsLessThanMinValue_ThrowsArgumentOutOfRangeException()
 	{
 		var exception = Assert.Throws<ArgumentOutOfRangeException>(() =>
-			_randomPasswordGeneratorSut.Generate(10, 5, useSpecial: false));
+			_randomPasswordGeneratorSut.GeneratePassword(10, 5, useSpecial: false));
 
 		Assert.That(exception.ParamName, Is.EqualTo("maxValue"));
 	}

@@ -8,5 +8,5 @@ IRandomPasswordGenerator passwordGenerator = new RandomPasswordGenerator(randomP
 
 for (int i = 0; i < 10; i++)
 {
-	Console.WriteLine(passwordGenerator.Generate(5, 10, false));
+	Console.WriteLine(passwordGenerator.GeneratePassword(5, 10, false));
 }
