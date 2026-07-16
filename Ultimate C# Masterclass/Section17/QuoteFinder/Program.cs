@@ -1,14 +1,28 @@
 ﻿Console.WriteLine("Enter the word you want to search: ");
 var searchedWord = Console.ReadLine();
 
-if (int.TryParse(searchedWord, out var word)
-	|| string.IsNullOrWhiteSpace(searchedWord)
-	|| WordHasSpecialCharacters(searchedWord))
+ValidateInput(searchedWord);
+
+Console.WriteLine("");
+var numberOfPages = Console.Read();
+
+static void ValidateInput(string? searchedWord)
 {
-	Console.WriteLine("The searched word has to be a single word only it cannot be a sentence, nor have any special characters (includes numbers). The word has to be provided and cannot be a whitespace.");
+	if (string.IsNullOrWhiteSpace(searchedWord))
+	{
+		Console.WriteLine("The searched word cannot be null or a whitespace.");
+		return;
+	}
+
+	if (WordHasSpacesAndContainsLetters(searchedWord))
+	{
+		Console.WriteLine("The searched word has to be a single word. The word cannot contain any special characters including numbers.");
+		return;
+	}
 }
 
-static bool WordHasSpecialCharacters(string word)
+static bool WordHasSpacesAndContainsLetters(string searchedWord)
 {
-	return word.Any(character => !char.IsLetterOrDigit(character));
+	return searchedWord.Any(character => char.IsWhiteSpace(character)
+	|| !char.IsLetter(character));
 }
