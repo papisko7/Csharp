@@ -1,0 +1,131 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>OLAP Advanced</Database>
+    <Server>WIN-5HGHNB4\OLAP</Server>
+    <ConnectionString>Data Source=WIN-5HGHNB4\OLAP;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>DE0xtdTuzkoHxw48HPrgfeXkyAE=23.05.2026 18:53:5423.05.2026 17:03:49</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2016</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>YcM9gVN1bdJ2xG5IK24UHVCLBHA=23.05.2026 18:53:4323.05.2026 17:06:50</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2016</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IEWq2c/XXF1rQiqFR/V2SEoyJW0=23.05.2026 18:22:4623.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vSFNAWTwwLM/x7FtH6Ru2zKdXNA=23.05.2026 18:17:2823.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Dim Promotion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TWO9kapb3jZLoqrvpA+AxnOy6Fc=23.05.2026 18:18:0223.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Dim Currency</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Cb3+qdeZvhnwyWiYwtPJWOhCtD0=23.05.2026 18:19:2123.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Dim Sales Territory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>i00DaEKaxY60DONuoYaDUvLW6yk=23.05.2026 18:16:5823.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b1lWzybECcpYsdouLqQof58OXUM=23.05.2026 18:11:3923.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xTvPdSRVVQrnCH4b0LbFP3Tl9hE=23.05.2026 17:09:4423.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Fact Internet Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>W5inY9fzAGReCBWTjYOWhSL7E9c=23.05.2026 18:55:3223.05.2026 18:50:31</TimeStamp>
+        <ID>
+          <String>Fact Call Center</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>+w9k/+DK/usysU7mvYfEDCozEjA=23.05.2026 18:54:0123.05.2026 17:09:43UdYbzOIdmaosBvnuGrk/BgN8ukU=23.05.2026 17:09:4323.05.2026 17:09:43</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2016</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>7F0QJkgnw2IUsVXWa9nisf2inzk=23.05.2026 18:54:0723.05.2026 17:31:237blUUD2ItwKgBwIIL1vOgyzWFqc=23.05.2026 17:31:2323.05.2026 17:31:23</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2016 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>NFTp12cOq8vTtJNG0StjaNhsaSM=23.05.2026 18:54:1423.05.2026 18:45:47dR4lB6o9ARAE4XhSUKEOhcin3Ss=23.05.2026 18:45:4723.05.2026 18:45:47</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2016 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>wuZsuVA4UbJo2sfL0TvSEl7t6U0=23.05.2026 18:55:3223.05.2026 18:50:31bu9Rasd8Wk+yacSpKPvmBNj6su4=23.05.2026 18:50:3123.05.2026 18:50:31</TimeStamp>
+        <ID>
+          <String>Adventure Works DW2016 3</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>SPSz1vnt8sgnn4211lyc3GOAOrc=23.05.2026 17:02:2323.05.2026 17:02:23</TimeStamp>
+      <ID>
+        <String>OLAP Advanced</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2026-05-23T16:55:39.943333Z</LastDeployed>
+</DeploymentSnapshot>

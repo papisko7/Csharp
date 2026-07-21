@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2016</Id>
+            <Name>Adventure Works DW2016</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMLLUzAAmNEewfHm7f14T2AAAAAAuAAAAQQBkAHYAZQBuAHQAdQByAGUAIABXAG8AcgBrAHMAIABEAFcAMgAwADEANgAAABBmAAAAAQAAIAAAAJSiFg5z7aOWfl8LpL93prCaqYYi1p0wWiK27NW1KhfxAAAAAA6AAAAAAgAAIAAAAAPCF38OHG4xNGC+jce4kdXhGiP0YoH3BB1Ryjd0KTrkEAAAAOCsD1TkE068QaewChdEjopAAAAAEvUKxS4q25YC0J5VzYXczcyXJ376WKyvq6rv6lJ2plCESvBVgGkoFUirkJw+0nF/GjJFBEtV0VJO4Vn/IdFW2A==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2016</Id>
+            <Name>Adventure Works DW2016</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMLLUzAAmNEewfHm7f14T2AAAAAAuAAAAQQBkAHYAZQBuAHQAdQByAGUAIABXAG8AcgBrAHMAIABEAFcAMgAwADEANgAAABBmAAAAAQAAIAAAAP8ZjHkNJ433OyXTJCaNIJuXwgym7++vsU1l24fv5fDXAAAAAA6AAAAAAgAAIAAAALMjIjUXwSITBBzQnhDHAy8F06UMpBG4e6tg8mJ7RRgYEAAAAAi80p/nz5QDnEaDILyklkNAAAAAO+0LC9zlyO1s7QP70Y3f2wfck+fOqkQwhStD08KzbiVIzI8ZE6Z2Va+gSnh1IWMLFK9J8NlCcWUkG0r02H4/Cg==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>WIN-5HGHNB4\OLAP</TargetServer>
+        <TargetDatabase>OLAP Advanced</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>
