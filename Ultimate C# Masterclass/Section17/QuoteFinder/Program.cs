@@ -26,22 +26,7 @@ for (var page = 1; page <= parsedPagesToCheck; page++)
 		var response = await client.ReadAsync(page, parsedQuotesPerPage);
 		var deserializeRoot = JsonConvert.DeserializeObject<Root>(response);
 
-		if (deserializeRoot is not null)
-		{
-			if (deserializeRoot.Data is null)
-			{
-				throw new NullReferenceException("API returned no data.");
-			}
-
-			if (!deserializeRoot.Data.Any())
-			{
-				Console.WriteLine($"No data returned for page {deserializeRoot?.Pagination?.CurrentPage}");
-			}
-		}
-		else
-		{
-			throw new NullReferenceException("Received null response.");
-		}
+		ValidateApiResponse(deserializeRoot);
 	}
 	catch (Exception ex)
 	{
@@ -82,4 +67,24 @@ static int ParseToInt(string? parsedString)
 	}
 
 	return result;
+}
+
+static void ValidateApiResponse(Root? response)
+{
+	if (response is not null)
+	{
+		if (response.Data is null)
+		{
+			throw new NullReferenceException("API returned no data.");
+		}
+
+		if (!response.Data.Any())
+		{
+			Console.WriteLine($"No data returned for page {response?.Pagination?.CurrentPage}");
+		}
+	}
+	else
+	{
+		throw new NullReferenceException("Received null response.");
+	}
 }
