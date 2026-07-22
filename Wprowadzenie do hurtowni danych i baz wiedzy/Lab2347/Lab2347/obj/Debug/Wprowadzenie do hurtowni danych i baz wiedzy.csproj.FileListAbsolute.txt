@@ -1,0 +1,10 @@
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\bin\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.exe.config
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\bin\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.exe
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\bin\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.pdb
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\obj\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.csproj.AssemblyReference.cache
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\obj\Debug\Lab2.Form1.resources
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\obj\Debug\Lab2.Properties.Resources.resources
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\obj\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.csproj.GenerateResource.cache
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\obj\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.csproj.CoreCompileInputs.cache
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\obj\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.exe
+D:\Repositories\Private\repos\Wprowadzenie do hurtowni danych i baz wiedzy\Lab4\Wprowadzenie do hurtowni danych i baz wiedzy\obj\Debug\Wprowadzenie do hurtowni danych i baz wiedzy.pdb
