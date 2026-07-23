@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using QuoteFinder.Dto;
 using QuoteFinder.Mock;
+using System.Text.RegularExpressions;
 
 const string PAGES_TO_CHECK_PROMPT = "Enter the number of pages of data that you want to check to find your word:";
 const string QUOTES_PER_PAGE_PROMPT = "Enter the number of quotes on each page of data:";
@@ -25,6 +26,17 @@ for (var page = 1; page <= parsedPagesToCheck; page++)
 	{
 		continue;
 	}
+
+	var pattern = $@"\b{Regex.Escape(searchedWord)}\b";
+	var shortestQuote = FindShortestQuote(deserializedRoot!.Data, pattern);
+
+	if (shortestQuote is null)
+	{
+		Console.WriteLine($"No quote found containing '{shortestQuote.QuoteText}' on page {page}.");
+		continue;
+	}
+
+	Console.WriteLine($"Page {page} \"{shortestQuote.QuoteText}\" -- {shortestQuote.QuoteAuthor}");
 }
 
 Console.WriteLine("Program is finished.");
@@ -122,4 +134,10 @@ static bool IsApiResponseValid(Root? response, int pageNumber)
 	}
 
 	return true;
+}
+
+static Datum FindShortestQuote(IReadOnlyCollection<Datum> responseData, string pattern)
+{
+	return responseData.Where(data => Regex.IsMatch(data.QuoteText, pattern, RegexOptions.IgnoreCase))
+	.OrderBy(match => match.QuoteText.Length).FirstOrDefault();
 }
