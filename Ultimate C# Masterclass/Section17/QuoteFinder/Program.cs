@@ -1,30 +1,47 @@
 ﻿using Newtonsoft.Json;
+using QuoteFinder.Data;
 using QuoteFinder.Dto;
 using QuoteFinder.Mock;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-const string PAGES_TO_CHECK_PROMPT = "Enter the number of pages of data that you want to check to find your word:";
-const string QUOTES_PER_PAGE_PROMPT = "Enter the number of quotes on each page of data:";
-
 var searchedWord = ReadValidSearchedWord();
-var parsedPagesToCheck = ReadIntFromConsole(PAGES_TO_CHECK_PROMPT);
-var parsedQuotesPerPage = ReadIntFromConsole(QUOTES_PER_PAGE_PROMPT);
+var parsedPagesToCheck = ReadIntFromConsole("Enter the number of pages of data that you want to check to find your word:");
+var parsedQuotesPerPage = ReadIntFromConsole("Enter the number of quotes on each page of data:");
 
 Console.WriteLine("Enable parallel processing? (y/n): ");
 var shouldEnableParallelProcessing = Console.ReadLine();
 
+var stopWatch = new Stopwatch();
 var client = new HttpClient();
 var clientMock = new MockQuotesApiDataReader();
 
+stopWatch.Start();
 for (var page = 1; page <= parsedPagesToCheck; page++)
+{
+	await ProcessPageAsync(searchedWord, client, clientMock, page, parsedQuotesPerPage);
+}
+stopWatch.Stop();
+
+var timespan = stopWatch.Elapsed;
+var elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+			timespan.Hours, timespan.Minutes, timespan.Seconds,
+			timespan.Milliseconds / 10);
+
+Console.WriteLine("RunTime: " + elapsedTime);
+Console.WriteLine("Program is finished.");
+Console.ReadKey();
+
+static async Task<PageResult> ProcessPageAsync(string searchedWord, HttpClient client, MockQuotesApiDataReader clientMock, int page, int parsedQuotesPerPage)
 {
 	var url = $"https://quote-garden.onrender.com/api/v3/quotes?limit={parsedQuotesPerPage}&page={page}";
 	var jsonResponse = await GetResponse(url, page, parsedQuotesPerPage, client, clientMock);
 	var deserializedRoot = JsonConvert.DeserializeObject<Root>(jsonResponse);
+	string message = string.Empty;
 
-	if (!IsApiResponseValid(deserializedRoot, page))
+	if (!IsApiResponseValid(deserializedRoot, page, out message))
 	{
-		continue;
+		return new PageResult(message);
 	}
 
 	var pattern = $@"\b{Regex.Escape(searchedWord)}\b";
@@ -32,15 +49,13 @@ for (var page = 1; page <= parsedPagesToCheck; page++)
 
 	if (shortestQuote is null)
 	{
-		Console.WriteLine($"No quote found containing '{shortestQuote.QuoteText}' on page {page}.");
-		continue;
+		Console.WriteLine($"No quote found containing '{searchedWord}' on page {page}.");
+		return new PageResult($"No quote found containing '{searchedWord}' on page {page}.");
 	}
 
 	Console.WriteLine($"Page {page} \"{shortestQuote.QuoteText}\" -- {shortestQuote.QuoteAuthor}");
+	return new PageResult(page, shortestQuote.QuoteText, "OK");
 }
-
-Console.WriteLine("Program is finished.");
-Console.ReadKey();
 
 static string ReadValidSearchedWord()
 {
@@ -119,20 +134,25 @@ static async Task<string> GetResponse(string url, int page, int parsedQuotesPerP
 	}
 }
 
-static bool IsApiResponseValid(Root? response, int pageNumber)
+static bool IsApiResponseValid(Root? response, int pageNumber, out string message)
 {
 	if (response is null)
 	{
-		Console.WriteLine($"Page {pageNumber}: Received null or invalid JSON response.");
+		message = $"Page {pageNumber}: Received null or invalid JSON response.";
+		Console.WriteLine(message);
+
 		return false;
 	}
 
 	if (response.Data is null || !response.Data.Any())
 	{
-		Console.WriteLine($"Page {pageNumber}: No quotes found in response.");
+		message = $"Page {pageNumber}: No quotes found in response.";
+		Console.WriteLine(message);
+
 		return false;
 	}
 
+	message = "Api response is valid";
 	return true;
 }
 
