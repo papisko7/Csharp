@@ -23,12 +23,7 @@ for (var page = 1; page <= parsedPagesToCheck; page++)
 }
 stopWatch.Stop();
 
-var timespan = stopWatch.Elapsed;
-var elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
-			timespan.Hours, timespan.Minutes, timespan.Seconds,
-			timespan.Milliseconds / 10);
-
-Console.WriteLine("RunTime: " + elapsedTime);
+Console.WriteLine("RunTime: " + stopWatch.Elapsed);
 Console.WriteLine("Program is finished.");
 Console.ReadKey();
 
